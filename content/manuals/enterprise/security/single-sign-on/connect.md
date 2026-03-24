@@ -95,11 +95,13 @@ host using the TXT Record Value from Docker. DNS propagation can take up to
 ### Step 3. Create an SSO connection in Docker
 
 1. From [app.docker.com](https://app.docker.com), choose your
-organization then select **Admin Console**. Select **SSO and SCIM** from the **Security** section. 
-1. Select **Create Connection** and name the connection. Choose either **SAML** or **Azure AD (OIDC)** for your authentication method.
-1. Copy and paste all the values provided from the modal:
-    - Okta SAML: **Entity ID**, **ACS URL**, and **Connection ID**
-    - Azure OIDC: **Redirect URL**
+organization then select **Admin Console**. 
+1. Choose **SSO and SCIM** from the **Security** section. 
+1. Select **Create Connection** and name the connection, then choose **SAML**.
+1. Copy and paste all the values provided from the Okta SAML modal:
+    - **Entity ID**
+    - **ACS URL**
+    - **Connection ID**
 
 Keep this window open. You will use it later when you paste values from your IdP.
 
@@ -112,20 +114,18 @@ Use the following tabs based on your IdP provider.
 
 To enable SSO with Okta, you need [super admin](https://help.okta.com/en-us/content/topics/security/administrators-super-admin.htm) permissions for the Okta org. 
 
-1. When you log in to your Okta Admin account, select the **Admin** button from the top nav. This is Okta's Admin Console. 
-1. From the left nav, choose **Applications** and select **Create App Integration**.
-   - Choose the method based on your saved ID from Docker's Admin Console.    
-   - Name your app "Docker."
-   - Uploading an image isn't required. 
-1. Configure your settings: 
+1. Sign in to your Okta Admin account and select the **Admin** button from the top nav to go to Okta's Admin Console. 
+1. From the **Applications** section in the left nav, choose **Applications**, then select **Create App Integration**.
+1. Choose SAML 2.0 to match your selection from Docker's Admin Console.    
+1. For **1. General Settings**, name your app "Docker." Uploading a logo is optional. 
+1. For **2. Configure SAML**, input the following values: 
     - For the **Single Sign On URL** value, paste the Docker ACS URL. 
     - For the **Audience URI (SP Entity ID)** value, paste the Docker Entity ID. 
-3. Configure the following settings. These settings determine the primary identification method your IdP sends to Docker for verification:
-    - Name ID format: `EmailAddress`
-    - Application username: `Email`
-    - Update application on: `Create and update`
-4. Optional. Add [SAML attributes](/manuals/enterprise/security/provisioning/_index.md#sso-attributes), if required by your org. 
-5. Select the **This is an internal app that we have created** checkbox before finishing. 
+    - For **Name ID format**, choose `EmailAddress`
+    - For **Application username**, choose `Email`
+    - For **Update application username on**, choose `Create and update`
+    - Optional. Add [SAML attributes](/manuals/enterprise/security/provisioning/_index.md#sso-attributes), if required by your org. 
+1. On **3. Feedback**, choose **This is an internal app that we have created** checkbox before finishing. 
 
 {{< /tab >}}
 {{< tab name="Entra ID SAML 2.0" >}}
