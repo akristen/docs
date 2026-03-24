@@ -8,9 +8,28 @@ disableHugoGeneratorInject: true
 ignoreLogs:
   - cascade-pattern-with-extension
 
-taxonomies:
-  tag: tags
-  language: languages
+taxonomies: {}
+
+# Cascade layout and type settings to content subtrees.
+# See https://gohugo.io/configuration/cascade/#target
+cascade:
+  # Guide sections use the series layout (metadata card + modules list)
+  - target:
+      path: /guides/**
+      kind: section
+    layout: series
+  # Sample pages use the samples type (routes to layouts/samples/)
+  - target:
+      path: /reference/samples/**
+      kind: page
+    type: samples
+  # CLI reference pages use the cli layout (data-driven from YAML)
+  - target:
+      path: /reference/cli/docker
+    layout: cli
+  - target:
+      path: /reference/cli/docker/**
+    layout: cli
 
 # Remove the /manuals prefix for content in the manuals section
 permalinks:
@@ -92,10 +111,6 @@ outputs:
   section:
     - html
     - markdown
-  taxonomy:
-    - html
-  term:
-    - html
 
 languages:
   en:
@@ -124,25 +139,29 @@ params:
   # Use `grep` to figure out how they might be used.
 
   # Latest version of the Docker Engine API
-  latest_engine_api_version: "1.53"
+  latest_engine_api_version: "1.54"
   # Latest version of Docker Engine
-  docker_ce_version: "29.2.1"
+  docker_ce_version: "29.3.0"
   # Previous version of the Docker Engine
   # (Used to show e.g., "latest" and "latest"-1 in engine install examples
-  docker_ce_version_prev: "29.2.0"
+  docker_ce_version_prev: "29.2.1"
   # Latest Docker Compose version
   compose_version: "v5.0.1"
   # Latest BuildKit version
   buildkit_version: "0.27.0"
   # Latest actions version
-  bake_action_version: "v6"
-  build_push_action_version: "v6"
-  login_action_version: "v3"
-  metadata_action_version: "v5"
-  setup_buildx_action_version: "v3"
-  setup_compose_action_version: "v1"
-  setup_docker_action_version: "v4"
-  setup_qemu_action_version: "v3"
+  bake_action_version: "v7"
+  build_push_action_version: "v7"
+  login_action_version: "v4"
+  metadata_action_version: "v6"
+  setup_buildx_action_version: "v4"
+  setup_compose_action_version: "v2"
+  setup_docker_action_version: "v5"
+  setup_qemu_action_version: "v4"
+  github_builder_version: "v1"
+  # Generic actions
+  checkout_action_version: "v6"
+  cache_action_version: "v5"
 
   # Example runtime/library/os versions
   example_go_version: "1.25"
@@ -152,18 +171,18 @@ params:
 menus:
   # Site header menu
   main:
-  - name: Get started
-    pageRef: /get-started/
-    weight: 1
-  - name: Guides
-    pageRef: /guides/
-    weight: 2
-  - name: Manuals
-    pageRef: /manuals/
-    weight: 3
-  - name: Reference
-    pageRef: /reference/
-    weight: 4
+    - name: Get started
+      pageRef: /get-started/
+      weight: 1
+    - name: Guides
+      pageRef: /guides/
+      weight: 2
+    - name: Manuals
+      pageRef: /manuals/
+      weight: 3
+    - name: Reference
+      pageRef: /reference/
+      weight: 4
 
   # Footer links
   footer:
@@ -181,7 +200,7 @@ menus:
     - url: https://www.docker.com/products/business
       name: Docker Business
       parent: Product offerings
-    - url: https://www.docker.com/pricing/faq
+    - url: https://www.docker.com/pricing?ref=Docs&refAction=DocsFooter
       name: Pricing FAQs
       parent: Product offerings
     - url: https://www.docker.com/partners/programs
@@ -272,7 +291,7 @@ module:
   proxy: https://proxy.golang.org,direct
   hugoVersion:
     extended: false
-    min: "0.141.0"
+    min: "0.156.0"
   mounts:
     # Mount the assets directory so it doesn't get overwritten
     - source: assets
@@ -289,7 +308,6 @@ module:
       target: assets/css/highlight-github-dark.css
 
   imports:
-
     # Docker Engine API
     - path: github.com/moby/moby/api
       mounts:
@@ -297,7 +315,7 @@ module:
           target: content/reference/api/engine/version-history.md
         - source: docs
           target: content/reference/api/engine/version
-          includeFiles: "*.yaml"
+          files: ["*.yaml"]
 
     # BuildKit
     - path: github.com/moby/buildkit
@@ -306,7 +324,7 @@ module:
           target: content/reference/dockerfile.md
         - source: frontend/dockerfile/docs/rules
           target: content/reference/build-checks
-          includeFiles: "*.md"
+          files: ["*.md"]
         - source: docs/buildkitd.toml.md
           target: content/manuals/build/buildkit/toml-configuration.md
         - source: docs/attestations/slsa-definitions.md
@@ -327,10 +345,10 @@ module:
       mounts:
         - source: docs/extend
           target: content/manuals/engine/extend
-          excludeFiles:
-            - "EBS_volume.md"
-            - "plugins_metrics.md"
-            - "plugins_services.md"
+          files:
+            - "! EBS_volume.md"
+            - "! plugins_metrics.md"
+            - "! plugins_services.md"
         - source: docs/deprecated.md
           target: content/manuals/engine/deprecated.md
         - source: docs/reference/run.md
@@ -342,19 +360,12 @@ module:
     - path: github.com/docker/compose/v5
       mounts:
         - source: docs/reference
-          target: data/compose-cli
-          includeFiles: "*.yaml"
+          target: data/cli/compose
+          files: ["*.yaml"]
 
     # Model CLI
-    - path: github.com/docker/model-runner/cmd/cli
+    - path: github.com/docker/model-runner
       mounts:
-        - source: docs/reference
-          target: data/model-cli
-          includeFiles: "*.yaml"
-
-    # MCP CLI
-    - path: github.com/docker/mcp-gateway
-      mounts:
-        - source: docs/generator/reference
-          target: data/mcp-cli
-          includeFiles: "*.yaml"
+        - source: cmd/cli/docs/reference
+          target: data/cli/model
+          files: ["*.yaml"]
