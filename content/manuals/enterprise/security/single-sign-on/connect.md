@@ -97,8 +97,8 @@ host using the TXT Record Value from Docker. DNS propagation can take up to
 1. From [app.docker.com](https://app.docker.com), choose your
 organization then select **Admin Console**. Select **SSO and SCIM** from the **Security** section. 
 1. Select **Create Connection** and name the connection. Choose either **SAML** or **Azure AD (OIDC)** for your authentication method.
-1. Copy the required values for your IdP and store these values in a text editor:
-    - Okta SAML: **Entity ID**, **ACS URL**
+1. Copy and paste all the values provided from the modal:
+    - Okta SAML: **Entity ID**, **ACS URL**, and **Connection ID**
     - Azure OIDC: **Redirect URL**
 
 Keep this window open. You will use it later when you paste values from your IdP.
@@ -112,19 +112,20 @@ Use the following tabs based on your IdP provider.
 
 To enable SSO with Okta, you need [super admin](https://help.okta.com/en-us/content/topics/security/administrators-super-admin.htm) permissions for the Okta org. 
 
-1. Open the Admin portal from your Okta account and select **Administration**. 
-1. Choose **Create App Integration** and select **SAML 2.0**. 
-   - When prompted, name your app "Docker." 
-   - You may upload a logo, but it's not required. 
-1. Paste the values you copied from creating an SSO connection in Docker: 
+1. When you log in to your Okta Admin account, select the **Admin** button from the top nav. This is Okta's Admin Console. 
+1. From the left nav, choose **Applications** and select **Create App Integration**.
+   - Choose the method based on your saved ID from Docker's Admin Console.    
+   - Name your app "Docker."
+   - Uploading an image isn't required. 
+1. Configure your settings: 
     - For the **Single Sign On URL** value, paste the Docker ACS URL. 
     - For the **Audience URI (SP Entity ID)** value, paste the Docker Entity ID. 
-1. Configure the following settings. These settings determine the primary identification method your IdP sends to Docker for verification:
+3. Configure the following settings. These settings determine the primary identification method your IdP sends to Docker for verification:
     - Name ID format: `EmailAddress`
     - Application username: `Email`
     - Update application on: `Create and update`
-1. Optional. Add [SAML attributes](/manuals/enterprise/security/provisioning/_index.md#sso-attributes), if required by your org. 
-1. Select the **This is an internal app that we have created** checkbox before finishing. 
+4. Optional. Add [SAML attributes](/manuals/enterprise/security/provisioning/_index.md#sso-attributes), if required by your org. 
+5. Select the **This is an internal app that we have created** checkbox before finishing. 
 
 {{< /tab >}}
 {{< tab name="Entra ID SAML 2.0" >}}
