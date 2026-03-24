@@ -112,20 +112,20 @@ Use the following tabs based on your IdP provider.
 {{< tabs >}}
 {{< tab name="Okta SAML" >}}
 
-To enable SSO with Okta, you need [super admin](https://help.okta.com/en-us/content/topics/security/administrators-super-admin.htm) permissions for the Okta org. 
+You need [super admin permissions](https://help.okta.com/en-us/content/topics/security/administrators-super-admin.htm) for the Okta org. 
 
-1. Sign in to your Okta Admin account and select the **Admin** button from the top nav to go to Okta's Admin Console. 
-1. From the **Applications** section in the left nav, choose **Applications**, then select **Create App Integration**.
-1. Choose SAML 2.0 to match your selection from Docker's Admin Console.    
-1. For **1. General Settings**, name your app "Docker." Uploading a logo is optional. 
-1. For **2. Configure SAML**, input the following values: 
+1. Sign in to the Okta Admin account and select the **Admin** button from the top nav to go to Okta's Admin Console. 
+2. From the **Applications** section in the left nav, choose **Applications**, then select **Create App Integration**.
+3. Choose SAML 2.0 to match your selection from Docker's Admin Console.    
+4. For **1. General Settings**, name your app "Docker." Uploading a logo is optional. 
+5. For **2. Configure SAML**, input the following values: 
     - For the **Single Sign On URL** value, paste the Docker ACS URL. 
     - For the **Audience URI (SP Entity ID)** value, paste the Docker Entity ID. 
     - For **Name ID format**, choose `EmailAddress`
     - For **Application username**, choose `Email`
     - For **Update application username on**, choose `Create and update`
     - Optional. Add [SAML attributes](/manuals/enterprise/security/provisioning/_index.md#sso-attributes), if required by your org. 
-1. On **3. Feedback**, choose **This is an internal app that we have created** checkbox before finishing. 
+6. On **3. Feedback**, choose **This is an internal app that we have created** checkbox before finishing. 
 
 Keep your Okta window open for the next step. 
 
@@ -233,9 +233,9 @@ Docker supports multiple identity provider (IdP) configurations by letting you a
 To add multiple IdPs:
 
 1. Use the same domain for each connection. 
-1. Repeat steps 3-6 from the [Set up an SSO connection] procedures on this page. Repeat these steps for each IdP your organization intends to use.
+1. Repeat steps 3-6 from the [Set up an SSO connection](/enterprise/security/single-sign-on/connect/#set-up-an-sso-connection) procedures on this page. Repeat these steps for each IdP your organization intends to use.
 
-Because you must use the same domain for each IdP, you don't need to repeat steps 1 and 2. 
+Because you must use the same domain for each IdP, you won't need to repeat steps to add and verify your domains. 
 
 ## Enforce SSO
 
