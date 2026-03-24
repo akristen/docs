@@ -127,6 +127,8 @@ To enable SSO with Okta, you need [super admin](https://help.okta.com/en-us/cont
     - Optional. Add [SAML attributes](/manuals/enterprise/security/provisioning/_index.md#sso-attributes), if required by your org. 
 1. On **3. Feedback**, choose **This is an internal app that we have created** checkbox before finishing. 
 
+Keep your Okta window open for the next step. 
+
 {{< /tab >}}
 {{< tab name="Entra ID SAML 2.0" >}}
 
@@ -143,8 +145,6 @@ To enable SSO with Microsoft Entra, you need [Cloud Application Administrator](h
 
 {{< /tab >}}
 {{< tab name="Azure OpenID Connect (OIDC)" >}}
-
-The following procedures reproduce instructions from Microsoft Learn documentation for [configuring an app service with OIDC](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-openid-connect#-register-your-app-with-the-oidc-identity-provider). If you're uncertain, review the official Microsoft documentation and return here for the rest of the procedures.  
 
 #### Register the app
 
@@ -183,9 +183,9 @@ Complete the integration by pasting your IdP values into Docker.
 {{< tabs >}}
 {{< tab name="Okta SAML" >}}
 
-1. In Okta, select your app and go to **View SAML setup instructions**.
-1. Copy the **SAML Sign-in URL** and **x509 Certificate**, then return to the Docker Admin Console.
-1. Paste the **SAML Sign-in URL** and **x509 Certificate** values.
+1. Go to **Applications** and choose **Applications**. Choose your app from the **ACTIVE** table.
+1. From **Sign on**, go to **View SAML setup instructions**. This page contains the **SAML Sign-in URL** and **x509 Certificate**. Keep this page open. 
+1. Return to your opened Docker window for the **Create single sign-on connection** step. Paste in the **SAML Sign-in URL** and **x509 Certificate** values.
 1. Optional. Select a default team, if required by your org.
 1. Review and select **Create connection**.
 
@@ -197,6 +197,7 @@ Complete the integration by pasting your IdP values into Docker.
     - From Azure AD: **Login URL**
     - **Certificate (Base64)** contents
 1. Return to the Docker Admin Console, then paste the **Login URL** and **Certificate (Base64)** values.
+1. Choose your domain from the dropdown. 
 1. Optional. Select a default team, if required by your org.
 1. Review and select **Create connection**.
 
