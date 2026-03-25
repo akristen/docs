@@ -22,7 +22,7 @@ To set up a single sign-on (SSO), you need to establish a connection between Doc
 and your identity provider (IdP). While this guide
 uses Okta and Microsoft Entra ID as a working example, the general process remains the same for other IdPs. 
 
-If you're unfamiliar with the SSO process, first review the [SSO overview](/enterprise/security/single-sign-on/) doc to learn about how SSO works. 
+If you're unfamiliar with the SSO process, first review [SSO overview](/enterprise/security/single-sign-on/) to learn about how SSO works. 
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ host using the TXT Record Value from Docker. DNS propagation can take up to
 
 > [!TIP]
 >
-> When adding a record name, **use `@` or leave it empty** for root domains like `example.com`. **Avoid common values** like `docker`, `docker-verification`, `www`, or your domain name itself. Always **check your DNS provider's documentation** to verify their specific record name requirements.
+> When adding a record name, use `@` or leave it empty for root domains like `example.com`. Avoid common values like `docker`, `docker-verification`, `www`, or your domain name itself. Always check your DNS provider's documentation to verify their specific record name requirements.
 
 {{< tabs >}}
 {{< tab name="AWS Route 53" >}}
@@ -92,7 +92,7 @@ host using the TXT Record Value from Docker. DNS propagation can take up to
 {{< /tab >}}
 {{< /tabs >}}
 
-### Step 3. Create an SSO connection in Docker
+### Step 3: Create an SSO connection in Docker
 
 1. From [app.docker.com](https://app.docker.com), choose your
 organization. Select **Admin Console**. 
@@ -105,7 +105,7 @@ organization. Select **Admin Console**.
 
 You will return here to finish connecting after creating an SSO connection in your IdP.
 
-### Step 4. Create an SSO connection in your IdP
+### Step 4: Create an SSO connection in your IdP
 
 Use the following tabs based on your IdP provider.
 
@@ -125,7 +125,7 @@ You need [super admin permissions](https://help.okta.com/en-us/content/topics/se
     - For **Application username**, choose `Email`
     - For **Update application username on**, choose `Create and update`
     - Optional. Add [SAML attributes](/manuals/enterprise/security/provisioning/_index.md#sso-attributes), if required by your org. 
-1. On **Feedback**, choose **This is an internal app that we have created** checkbox before finishing. 
+1. For **Feedback**, choose **This is an internal app that we have created** checkbox before finishing. 
 
 Keep your Okta window open for the next step. 
 
@@ -172,7 +172,7 @@ To enable SSO with Microsoft Entra, you need [Cloud Application Administrator](h
 {{< /tab >}}
 {{< /tabs >}}
 
-### Step 5. Connect Docker to your IdP
+### Step 5: Connect Docker to your IdP
 
 Complete the integration by pasting your IdP values into Docker.
 
@@ -215,7 +215,7 @@ Complete the integration by pasting your IdP values into Docker.
 {{< /tab >}}
 {{< /tabs >}}
 
-### Step 6. Test the connection
+### Step 6: Test the connection
 
 IdPs like Microsoft Entra and Okta may require that you assign a user to an application before testing SSO. You can review [Microsoft Entra](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-setup-sso#test-single-sign-on)'s documentation and [Okta](https://help.okta.com/wf/en-us/content/topics/workflows/connector-reference/okta/actions/assignusertoapplicationforsso.htm)'s documentation to learn how to assign yourself or other users to an app.
 
