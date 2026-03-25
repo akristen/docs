@@ -68,7 +68,7 @@ The following graphic provides an overview of SSO authentication with JIT disabl
 
 > [!WARNING]
 >
-> Disabling JIT provisioning may disrupt your users' access and workflows. With JIT disabled, users will not be automatically added to your organization. Users must already be a member of the organization or have a pending invitation to successfully sign in through SSO. To auto-provision users with JIT disabled, [use SCIM](./scim.md).
+> Disabling JIT provisioning may disrupt your users' access and workflows. With JIT disabled, users will not be automatically added to your organization. Users must already be a member of the organization or have a pending invitation to successfully sign in through SSO. To auto-provision users with JIT disabled, [use SCIM](/enterprise/security/provisioning/scim).
 
 You may want to disable JIT provisioning for reasons such as the following:
 

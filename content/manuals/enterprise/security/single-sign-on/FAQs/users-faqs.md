@@ -47,7 +47,7 @@ Additionally, you can use the [Docker Hub API](/reference/api/hub/latest/) to co
 
 When JIT is turned off (available with SCIM in the Admin Console), users must be organization members or have pending invitations to access Docker. Users who don't meet these criteria get an "Access denied" error and need administrator invitations.
 
-See [SSO authentication with JIT provisioning disabled](/manuals/enterprise/security/provisioning/just-in-time.md#sso-authentication-with-jit-provisioning-disabled).
+See [SSO authentication with JIT provisioning disabled](/enterprise/security/provisioning/just-in-time/just-in-time).
 
 ## Can someone join an organization without an invitation?
 
