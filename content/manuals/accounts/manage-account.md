@@ -38,11 +38,11 @@ It may take some time for your avatar to update in Docker.
 
 To update your email address:
 
-1. Sign in to [app.docker.com](https://app.docker.com/login).
+1. Sign in to your [Docker account](https://app.docker.com/login).
 1. Go to **Settings**, then choose **Email**.
 1. Enter your new email address and confirm your identity with your password. Select **Verify email**. 
 1. Go to the new Docker email and copy the 6-digit verification code. This code expires after 15 minutes. 
-1. Paste verification code to complete updating your email. 
+1. Paste the verification code to complete updating your email. 
 
 > [!NOTE]
 >
