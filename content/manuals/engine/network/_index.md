@@ -29,7 +29,7 @@ routing table, DNS services, and other networking details.
 This page describes networking from the point of view of the container,
 and the concepts around container networking.
 
-## Bridge network
+## Default network
 
 When Docker Engine starts for the first time, it uses a single
 built-in network called the default bridge network. This means that when 
@@ -43,8 +43,8 @@ with each other.
 
 * By default, the bridge network gives your containers 
 access to external networks through masquerading, or borrowing your Docker 
-host's public IP address to make and receive requests from the Internet.
-* While your containers communicate on the bridge network, devices 
+host's public IP address to make requests to and receive replies from the Internet.
+* While your containers communicate with each other on the bridge network, devices 
 with access to your external network only see communication coming from and 
 going to your containers with your Docker host's IP address. 
 
