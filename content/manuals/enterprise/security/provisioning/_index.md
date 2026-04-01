@@ -18,7 +18,7 @@ grid:
   - title: "Group mapping"
     description: "Configure role-based access control using IdP groups. Perfect for strict access control requirements."
     icon: "group"
-    link: "group-mapping/"
+    link: "scim/group-mapping/"
 ---
 
 {{< summary-bar feature_name="SSO" >}}

@@ -150,7 +150,7 @@ Next, [set up role mapping](#set-up-role-mapping).
 
 ## Set up role mapping
 
-You can assign [Docker roles](../roles-and-permissions.md) to
+You can assign [Docker roles](/enterprise/security/roles-and-permissions/) to
 users by adding optional SCIM attributes in your IdP. These attributes override
 default role and team values set in your SSO configuration.
 
@@ -164,7 +164,7 @@ The following table lists the supported optional user-level attributes:
 
 | Attribute    | Possible values                          | Notes                                                                                                                                                                                                                                                            |
 | ------------ | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `dockerRole` | `member`, `editor`, or `owner`           | If not set, the user defaults to the `member` role. Setting this attribute overrides the default.<br><br>For role definitions, see [Roles and permissions](../roles-and-permissions.md).                                                                         |
+| `dockerRole` | `member`, `editor`, or `owner`           | If not set, the user defaults to the `member` role. Setting this attribute overrides the default.<br><br>For role definitions, see [Roles and permissions](/enterprise/security/roles-and-permissions/).                                                                         |
 | `dockerOrg`  | Docker `organizationName` (e.g., `moby`) | Overrides the default organization configured in your SSO connection.<br><br>If unset, the user is provisioned to the default organization. If `dockerOrg` and `dockerTeam` are both set, the user is provisioned to the team within the specified organization. |
 | `dockerTeam` | Docker `teamName` (e.g., `developers`)   | Provisions the user to the specified team in the default or specified organization. If the team doesn't exist, it is automatically created.<br><br>You can still use [group mapping](group-mapping.md) to assign users to multiple teams across organizations.   |
 
@@ -176,7 +176,7 @@ This value is required in your identity provider when creating custom SCIM attri
 
 ### Step one: Set up role mapping in Okta
 
-1. Setup [SSO](../single-sign-on/connect.md) and SCIM first.
+1. Setup [SSO](/enterprise/security/single-sign-on/connect) and SCIM first.
 1. In the Okta admin portal, go to **Directory**, select **Profile Editor**,
    and then **User (Default)**.
 1. Select **Add Attribute** and configure the values for the role, organization,
@@ -368,5 +368,5 @@ To disable SCIM:
 
 ## Next steps
 
-- Set up [Group mapping](/manuals/enterprise/security/provisioning/scim/group-mapping.md).
-- [Troubleshoot provisioning](/manuals/enterprise/troubleshoot/troubleshoot-provisioning.md).
+- Set up [Group mapping](/enterprise/security/provisioning/scim/group-mapping/).
+- [Troubleshoot provisioning](/enterprise/troubleshoot/troubleshoot-provisioning/).

@@ -67,4 +67,4 @@ It also:
 - Ensures consistent access control policies.
 - Help you scale permissions as teams grow or change.
 
-For more information on how it works, see [Group mapping](/provisioning/scim/group-mapping).
+For more information on how it works, see [Group mapping](/enterprise/security/provisioning/scim/group-mapping).

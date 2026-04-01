@@ -19,7 +19,7 @@ This page explains how group mapping works, and how to set up group mapping.
 
 > [!TIP]
 >
-> Group mapping is ideal for adding users to multiple organizations or multiple teams within one organization. If you don't need to set up multi-organization or multi-team assignment, SCIM [user-level attributes](scim.md#set-up-role-mapping) may be a better fit for your needs.
+> Group mapping is ideal for adding users to multiple organizations or multiple teams within one organization. If you don't need to set up multi-organization or multi-team assignment, SCIM [user-level attributes](provision-scim.md#set-up-role-mapping) may be a better fit for your needs.
 
 ## Prerequisites
 
@@ -125,7 +125,7 @@ The next time you sync your groups with Docker, your users will map to the Docke
 
 ## Configure group mapping with SCIM
 
-Use group mapping with SCIM for more advanced user lifecycle management. Before you begin, make sure you [set up SCIM](./scim.md#enable-scim) first.
+Use group mapping with SCIM for more advanced user lifecycle management. Before you begin, make sure you [set up SCIM](./provision-scim.md#enable-scim) first.
 
 {{< tabs >}}
 {{< tab name="Okta" >}}
@@ -190,4 +190,4 @@ Once complete, a user who signs in to Docker through SSO is automatically added 
 
 > [!TIP]
 >
-> [Enable SCIM](scim.md) to take advantage of automatic user provisioning and de-provisioning. If you don't enable SCIM users are only automatically provisioned. You have to de-provision them manually.
+> [Enable SCIM](provision-scim.md) to take advantage of automatic user provisioning and de-provisioning. If you don't enable SCIM users are only automatically provisioned. You have to de-provision them manually.

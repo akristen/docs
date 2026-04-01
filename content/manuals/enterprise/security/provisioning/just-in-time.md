@@ -84,6 +84,6 @@ Users are provisioned with JIT by default. If you enable SCIM, you can disable J
 
 ## Next steps
 
-- Configure [SCIM provisioning](/manuals/enterprise/security/provisioning/scim.md) for advanced user management.
-- Set up [group mapping](/manuals/enterprise/security/provisioning/scim/group-mapping.md) to automatically assign users to teams.
+- Configure [SCIM provisioning](/enterprise/security/provisioning/scim/) for advanced user management.
+- Set up [group mapping](/enterprise/security/provisioning/scim/group-mapping) to automatically assign users to teams.
 - Review [Troubleshoot provisioning](/manuals/enterprise/troubleshoot/troubleshoot-provisioning.md).
