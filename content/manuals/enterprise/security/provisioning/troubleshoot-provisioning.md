@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot provisioning
-linkTitle: Troubleshoot provisioning
+linkTitle: Troubleshoot
 description: Troubleshoot common user provisioning issues with SCIM and Just-in-Time provisioning
 keywords: SCIM troubleshooting, user provisioning, JIT provisioning, group mapping, attribute conflicts
 tags: [Troubleshooting]

@@ -3,7 +3,7 @@ description: Learn how Just-in-Time provisioning works with your SSO connection.
 keywords: user provisioning, just-in-time provisioning, JIT, autoprovision, Docker Admin, admin, security
 title: Just-in-Time provisioning
 linkTitle: Just-in-Time
-weight: 20
+weight: 30
 aliases:
  - /security/for-admins/provisioning/just-in-time/
 ---

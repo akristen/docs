@@ -1,6 +1,6 @@
 ---
-title: SCIM provisioning
-linkTitle: SCIM
+title: Set up SCIM provisioning
+linkTitle: Set up
 description: Learn how System for Cross-domain Identity Management works and how to set it up.
 weight: 10
 ---

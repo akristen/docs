@@ -169,7 +169,7 @@ security posture:
 
 - [Manage Docker products](./manage-products.md) to configure access and view usage.
 - Configure [Hardened Docker Desktop](/desktop/hardened-desktop/) to improve your organization’s security posture for containerized development.
-- [Manage your domains](/manuals/enterprise/security/domain-management.md) to ensure that all Docker users in your domain are part of your organization.
+- [Manage your domains](/enterprise/security/provisioning/domain-management) to ensure that all Docker users in your domain are part of your organization.
 
 Your Docker subscription provides many more additional features. To learn more,
 see [Docker subscriptions and features](https://www.docker.com/pricing?ref=Docs&refAction=DocsAdminOnboard).

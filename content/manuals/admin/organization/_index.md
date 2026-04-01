@@ -31,13 +31,11 @@ grid:
   link: /admin/organization/general-settings/
 - title: SSO and SCIM
   description: 'Set up [Single Sign-On](/security/for-admins/single-sign-on/)
-    and [SCIM](/security/for-admins/provisioning/scim/) for your organization.
-
-    '
+    and [SCIM](/security/for-admins/provisioning/scim/) for your organization.'
   icon: key
 - title: Domain management
   description: Add, verify, and audit your domains.
-  link: /security/for-admins/domain-management/
+  link: /enterprise/security/provisioning/domain-management/
   icon: domain_verification
 - title: FAQs
   description: Explore common organization FAQs.

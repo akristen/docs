@@ -1,8 +1,8 @@
 ---
-title: Manage domains
+title: Add and manage domains
 description: Add, verify, and manage domains to control user access and enable auto-provisioning in Docker organizations
 keywords: domain management, domain verification, auto-provisioning, user management, DNS, TXT record, Admin Console
-weight: 55
+weight: 40
 aliases:
  - /security/for-admins/domain-management/
  - /docker-hub/domain-audit/
@@ -79,55 +79,7 @@ your domain name.
 {{< /tab >}}
 {{< /tabs >}}
 
-## Configure auto-provisioning
-
-Auto-provisioning automatically adds users to your organization when they sign in with email addresses that match your verified domains. You must verify a domain before enabling auto-provisioning.
-
-> [!IMPORTANT]
->
-> For domains that are part of an SSO connection, Just-in-Time (JIT) provisioning takes precedence over auto-provisioning when adding users to an organization.
-
-### How auto-provisioning works
-
-When auto-provisioning is enabled for a verified domain:
-
-- Users who sign in to Docker with matching email addresses are automatically added to your organization.
-- Auto-provisioning only adds existing Docker users to your organization, it doesn't create new accounts.
-- Users experience no changes to their sign-in process.
-- Company and organization owners receive email notifications when new users are added.
-- You may need to [manage seats](/manuals/subscription/manage-seats.md) to accommodate new users.
-
-### Enable auto-provisioning
-
-Auto-provisioning is configured per domain. To enable it:
-
-1. Sign in to [Docker Home](https://app.docker.com) and select
-your company or organization.
-1. Select **Admin Console**, then **Domain management**.
-1. Select the **Actions menu** next to the domain you want to enable
-auto-provisioning for.
-1. Select **Enable auto-provisioning**.
-1. Optional. If enabling auto-provisioning at the company level, select an
-organization.
-1. Select **Enable** to confirm.
-
-The **Auto-provisioning** column will update to **Enabled** for the domain.
-
-### Disable auto-provisioning
-
-To disable auto-provisioning for a user:
-
-1. Sign in to [Docker Home](https://app.docker.com) and select
-your organization. If your organization is part of a company, select the company
-and configure the domain for the organization at the company level.
-1. Select **Admin Console**, then **Domain management**.
-1. Select the **Actions menu** next to your domain.
-1. Select **Disable auto-provisioning**.
-1. Select **Disable** to confirm.
-
 ## Audit domains for uncaptured users
-
-{{< summary-bar feature_name="Domain audit" >}}
 
 Domain audit identifies uncaptured users. Uncaptured users are Docker users who have authenticated using an email address associated with your verified domains but aren't members of your Docker organization.
 

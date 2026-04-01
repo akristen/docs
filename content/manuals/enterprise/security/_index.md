@@ -34,7 +34,7 @@ grid_admins:
   icon: passkey
 - title: Domain management
   description: Identify uncaptured users in your organization.
-  link: /enterprise/security/domain-management/
+  link: /enterprise/security/provisioning/domain-management/
   icon: person_search
 - title: Docker Scout
   description: Explore how Docker Scout can help you create a more secure software supply chain.
