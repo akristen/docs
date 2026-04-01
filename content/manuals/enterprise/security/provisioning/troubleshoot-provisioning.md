@@ -6,7 +6,7 @@ keywords: SCIM troubleshooting, user provisioning, JIT provisioning, group mappi
 tags: [Troubleshooting]
 toc_max: 2
 aliases:
- - /security/troubleshoot/troubleshoot-provisioning/
+ - /enterprise/security/provisioning/troubleshoot-provisioning/
 ---
 
 This page helps troubleshoot common user provisioning issues including user roles, attributes, and unexpected account behavior with SCIM and Just-in-Time (JIT) provisioning.

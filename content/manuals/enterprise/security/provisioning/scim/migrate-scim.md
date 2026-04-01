@@ -173,4 +173,4 @@ If a user fails to reappear after removal:
 4. Check provisioning logs in your identity provider for errors.
 
 For more troubleshooting guidance, see
-[Troubleshoot provisioning](/manuals/enterprise/troubleshoot/troubleshoot-provisioning.md).
+[Troubleshoot provisioning](/enterprise/security/provisioning/troubleshoot-provisioning/).

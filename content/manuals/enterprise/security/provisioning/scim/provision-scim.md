@@ -369,4 +369,4 @@ To disable SCIM:
 ## Next steps
 
 - Set up [Group mapping](/enterprise/security/provisioning/scim/group-mapping/).
-- [Troubleshoot provisioning](/enterprise/troubleshoot/troubleshoot-provisioning/).
+- [Troubleshoot provisioning](/enterprise/security/provisioning/troubleshoot-provisioning/).

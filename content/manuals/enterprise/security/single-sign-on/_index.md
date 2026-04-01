@@ -55,5 +55,5 @@ Using a PAT ensures continued CLI access. For more information, see the
 ## Next steps
 
 - Start [configuring SSO](connect.md).
-- Read the [FAQs](/manuals/enterprise/security/single-sign-on/faqs/general.md).
-- [Troubleshoot](/manuals/enterprise/troubleshoot/troubleshoot-sso.md) SSO issues.
+- Read the [FAQs](/enterprise/security/single-sign-on/faqs/general).
+- [Troubleshoot](/enterprise/security/single-sign-on/faqs/troubleshoot-sso/) SSO issues.
