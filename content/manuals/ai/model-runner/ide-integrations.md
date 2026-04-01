@@ -240,6 +240,10 @@ print(response.text)
 
 [OpenCode](https://opencode.ai/) is an open-source coding assistant designed to integrate directly into developer workflows. It supports multiple model providers and exposes a flexible configuration system that makes it easy to switch between them.
 
+See [Use OpenCode with Docker Model Runner](../../../guides/opencode-model-runner.md)
+for a task-focused guide that walks through model setup, configuration, and
+troubleshooting.
+
 ### Configuration
 
 1. Install OpenCode (see [docs](https://opencode.ai/docs/#install))
@@ -350,7 +354,8 @@ If using browser-based tools, add the origin to CORS allowed origins:
 
 | Use case | Recommended model | Notes |
 |----------|-------------------|-------|
-| Code completion | `ai/qwen2.5-coder` | Optimized for coding tasks |
+| Code completion | `ai/qwen3-coder` | Optimized for coding tasks with a large context window |
+| Agentic coding | `ai/devstral-small-2` | Good fit for tools such as Claude Code and OpenCode |
 | General assistant | `ai/llama3.2` | Good balance of capabilities |
 | Small/fast | `ai/smollm2` | Low resource usage |
 | Embeddings | `ai/all-minilm` | For RAG and semantic search |
