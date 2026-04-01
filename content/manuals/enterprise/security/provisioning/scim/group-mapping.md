@@ -7,8 +7,8 @@ aliases:
 - /admin/organization/security-settings/group-mapping/
 - /docker-hub/group-mapping/
 - /security/for-admins/group-mapping/
-- /security/for-admins/provisioning/group-mapping/
-weight: 30
+- /security/for-admins/provisioning/scim/group-mapping/
+weight: 20
 ---
 
 {{< summary-bar feature_name="SSO" >}}
