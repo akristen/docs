@@ -25,9 +25,9 @@ at any time. All charges are in United States dollars (USD). The following payme
 
 Certain payment methods require additional steps before selecting them as a payment method: 
 
-* You must [verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account) before choosing a bank account as a payment method.
-* You must have a Docker Business or Docker Team plan to [pay by invoice](/billing/payment-method/#enable-and-disable-pay-by-invoice)
-* You must be an existing Stripe Link customer, or fill out the card information form to store a card for Link payments.
+* You must [verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account) before choosing a bank account.
+* You must have a Docker Business or Docker Team plan to [pay by invoice](/billing/payment-method/#enable-and-disable-pay-by-invoice).
+* You must be an existing Stripe Link customer, or fill out the card information form to use Link payments.
 
 {{% include "tax-compliance.md" %}}
 
@@ -44,7 +44,7 @@ Paid personal accounts and organizations follow the same procedures to add, upda
 1. Choose **Billing**, then select **Payment methods**.
 1. Select **Add payment method** and enter your new payment information:
    - For first time setup, fill in your billing information. 
-   - You will need your tax ID if you're purchasing as a business. 
+   - To purchase as a business, provide your tax ID. 
 1. Choose to add a card, add a US bank account, or add a Link payment. 
    - Select **Card** and fill out the card information form.
    - Select **US bank account**.
@@ -85,7 +85,7 @@ To add a payment method:
 After adding one or more payment methods, you can set one as a default method. 
 
 1. From **Billing**, go to **Payment methods**. 
-2. From the **Payment method table**, find the method to set as the default.
+2. Find the payment method you want to set as default from the **Payment method table**.
 3. Select the three dots, then choose **Set as default**.   
 
 ### Remove payment method 
@@ -93,7 +93,7 @@ After adding one or more payment methods, you can set one as a default method.
 To remove a single payment method:
 
 1. From **Billing**, go to **Payment methods**. 
-1. From the **Payment method table**, find the method to remove.
+1. Find the payment method you want to remove from the **Payment method table**.
 1. Select the three dots, then choose **Remove**.  
 
 If you have an active plan, you can't remove your default payment. To remove all payment methods, [downgrade your
