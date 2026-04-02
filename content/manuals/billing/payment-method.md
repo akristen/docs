@@ -7,71 +7,57 @@ aliases:
   - /billing/core-billing/payment-method/
 ---
 
-This page describes how to add or update a payment method for your personal
-account or for an organization.
+Docker supports different payment methods for your paid personal
+account or organization. This page describes supported payment types, how to make payments from [Docker Home](https://app.docker.com/), and how to set up pay by invoice. 
+
+## Payment types
 
 You can add a payment method or update your account's existing payment method
-at any time. If you want to remove all payment methods, you must first downgrade your
-subscription to a free subscription. See [Downgrade](../subscription/change.md).
+at any time. All charges are in United States dollars (USD). The following payment methods are supported:
 
-The following payment methods are supported:
+| Category      | Payment type                                                                 |
+| ------------- | ------------------------------------------------------------------------------ |
+| Cards         | Visa, MasterCard, American Express, Discover, JCB, Diners, UnionPay            |
+| Wallets       | Stripe Link                                                                    |
+| Bank accounts | Automated Clearing House (ACH) transfer with a verified US bank account
+ |
+  
+## Prerequisites 
 
-- Cards
-  - Visa
-  - MasterCard
-  - American Express
-  - Discover
-  - JCB
-  - Diners
-  - UnionPay
-- Wallets
-  - Stripe Link
-- Bank accounts
-  - Automated Clearing House (ACH) transfer with a
-    [verified](/manuals/billing/payment-method.md#verify-a-bank-account) US
-    bank account
-- [Pay by invoice](/manuals/billing/history.md)
+Certain payment methods require additional steps before selecting them as a payment method: 
 
-All charges are in United States dollars (USD).
+* You must [verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account) before choosing it as a payment method.
+* You must have a Docker Business or Docker Team plan to [pay by invoice](/billing/payment-method/#enable-and-disable-pay-by-invoice). 
+* You must have ELEPHANT to set up Stripe Link.
 
 {{% include "tax-compliance.md" %}}
 
 ## Manage payment method
 
-### Personal account
+Paid personal accounts and organizations follow the same procedures to add, update, or remove payment methods. 
+
+### Add payment method 
 
 {{< tabs >}}
 {{< tab name="Docker subscription" >}}
 
-To add a payment method:
-
-1. Sign in to [Docker Home](https://app.docker.com/) and select your
-   organization.
-1. Select **Billing**.
-1. Select **Payment methods** from the left-hand menu.
-1. Select **Add payment method**.
-1. Enter your new payment information:
-   - Add a card:
-     - Select **Card** and fill out the card information form.
-   - Add a Link payment:
+1. Sign in to [Docker Home](https://app.docker.com/) and choose either your account or organization.
+1. Choose **Billing**, then select **Payment methods**.
+1. Select **Add payment method** and enter your new payment information:
+   - For first time setup, fill in your billing information. 
+   - You will need your tax ID if you're purchasing as a business. 
+1. Choose to add a card, add a US bank account, or add a Link payment. 
+   - Select **Card** and fill out the card information form.
+   - Select **US bank account**.
+     - Verify your **Email** and **Full name**.
+     - If your bank is listed, select your bank's name.
+     - If your bank is not listed, select **Search for your bank**.
+   - ELEPHANT
      - Select **Secure, 1-click checkout with Link** and enter your
        Link **email address** and **phone number**.
      - If you don't already use Link, you must fill out the card information
        form to store a card for Link payments.
-   - Add a bank account:
-     - Select **US bank account**.
-     - Verify your **Email** and **Full name**.
-     - If your bank is listed, select your bank's name.
-     - If your bank is not listed, select **Search for your bank**.
-     - To verify your bank account, see
-       [Verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account).
-1. Select **Add payment method**.
-1. Optional. You can set a new default payment method by selecting
-   the **Set as default** action.
-1. Optional. You can remove non-default payment methods by selecting
-   the **Delete** action.
-
-If you want to set a US bank account as your default payment method, you must [verify the account](#verify-a-bank-account) first.
+1. Finish adding the payment method by selecting **Add payment method**.
 
 {{< /tab >}}
 {{< tab name="Legacy Docker subscription" >}}
@@ -99,74 +85,31 @@ To add a payment method:
 {{< /tab >}}
 {{< /tabs >}}
 
-### Organization
+### Set default payment method 
 
-You must be an organization owner to make changes to the payment information.
+After adding one or more payment methods, you can set one as a default method. 
 
-{{< tabs >}}
-{{< tab name="Docker subscription" >}}
+1. From **Billing**, go to **Payment methods**. 
+1. Select the three dots for method you want as default from the **Payment method** table.
+1. Choose **Set as default**.   
 
-To add a payment method:
+### Remove payment method 
 
-1. Sign in to [Docker Home](https://app.docker.com/) and select your
-   organization.
-1. Select **Billing**.
-1. Select **Payment methods** from the left-hand menu.
-1. Select **Add payment method**.
-1. Enter your new payment information:
-   - Add a card:
-     - Select **Card** and fill out the card information form.
-   - Add a Link payment:
-     - Select **Secure, 1-click checkout with Link** and enter your
-       Link **email address** and **phone number**.
-     - If you are not an existing Link customer, you must fill out the
-       card information form to store a card for Link payments.
-   - Add a bank account:
-     - Select **US bank account**.
-     - Verify your **Email** and **Full name**.
-     - If your bank is listed, select your bank's name.
-     - If your bank is not listed, select **Search for your bank**.
-     - To verify your bank account, see [Verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account).
-1. Select **Add payment method**.
-1. Optional. You can set a new default payment method by selecting
-   the **Set as default** action.
-1. Optional. You can remove non-default payment methods by selecting
-   the **Delete** action.
+To remove a single payment method:
 
-If you want to set a US bank account as your default payment method, you must verify the account first.
+1. From **Billing**, go to **Payment methods**. 
+1. Select the three dots for method you want as default from the **Payment method** table.
+1. Choose **Remove**.  
 
-{{< /tab >}}
-{{< tab name="Legacy Docker subscription" >}}
-
-To add a payment method:
-
-1. Sign in to [Docker Hub](https://hub.docker.com).
-1. Select your organization, then select **Billing**.
-1. Select the **Payment methods** link.
-1. Select **Add payment method**.
-1. Enter your new payment information:
-   - Add a card:
-     - Select **Card** and fill out the card information form.
-   - Add a Link payment:
-     - Select **Secure, 1-click checkout with Link** and enter your
-       Link **email address** and **phone number**.
-     - If you are not an existing Link customer, you must fill out the
-       card information form to store a card for Link payments.
-1. Select **Add payment method**.
-1. Select the **Actions** icon, then select **Make default** to ensure that
-   your new payment method applies to all purchases and subscriptions.
-1. Optional. You can remove non-default payment methods by selecting
-   the **Actions** icon. Then, select **Delete**.
-
-{{< /tab >}}
-{{< /tabs >}}
+If you have an active plan, you can't remove your default payment. To remove all payment methods, [downgrade your
+subscription](/subscription/change) to a free subscription.
 
 ## Enable and disable pay by invoice
 
-{{< summary-bar feature_name="Pay by invoice" >}}
+> [!TIP]
+> Do you need to pay by invoice? [Upgrade to a Docker Business or Docker Team plan](https://www.docker.com/pricing?ref=Docs&refAction=DocsBillingPaymentMethod) and choose the annual subscription.
 
-Pay by invoice is available for Teams and Business customers with annual
-subscriptions, starting with your first renewal. When you select this
+When you select this
 payment method, you'll pay upfront for your first subscription period using a
 payment card or ACH bank transfer.
 
@@ -178,15 +121,12 @@ Follow these steps to enable or disable pay by invoice:
 
 1. Sign in to [Docker Home](https://app.docker.com/) and select your
    organization.
-1. Select **Billing**.
-1. Select **Payment methods**, then **Pay by invoice**.
+2. Select **Billing**.
+3. Select **Payment methods**, then **Pay by invoice**.
    * To enable pay by invoice, select the toggle labeled **Disabled**.
    * To disable pay by invoice, select the toggle labeled **Enabled**.
-1. Confirm your billing contact details. If you need to change them, select
+4. Confirm your billing contact details. If you need to change them, select
    **Change** and enter your new details.
-
-> [!TIP]
-> Do you need to pay by invoice? [Upgrade to a Docker Business or Docker Team plan](https://www.docker.com/pricing?ref=Docs&refAction=DocsBillingPaymentMethod) and choose the annual subscription.
 
 ## Verify a bank account
 
