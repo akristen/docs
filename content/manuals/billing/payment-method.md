@@ -19,16 +19,15 @@ at any time. All charges are in United States dollars (USD). The following payme
 | ------------- | ------------------------------------------------------------------------------ |
 | Cards         | Visa, MasterCard, American Express, Discover, JCB, Diners, UnionPay            |
 | Wallets       | Stripe Link                                                                    |
-| Bank accounts | Automated Clearing House (ACH) transfer with a verified US bank account
- |
+| Bank accounts | Automated Clearing House (ACH) transfer with a verified US bank account |
   
 ## Prerequisites 
 
 Certain payment methods require additional steps before selecting them as a payment method: 
 
-* You must [verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account) before choosing it as a payment method.
-* You must have a Docker Business or Docker Team plan to [pay by invoice](/billing/payment-method/#enable-and-disable-pay-by-invoice). 
-* You must have ELEPHANT to set up Stripe Link.
+* You must [verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account) before choosing a bank account as a payment method.
+* You must have a Docker Business or Docker Team plan to [pay by invoice](/billing/payment-method/#enable-and-disable-pay-by-invoice)
+* You must be an existing Stripe Link customer, or fill out the card information form to store a card for Link payments.
 
 {{% include "tax-compliance.md" %}}
 
@@ -52,11 +51,7 @@ Paid personal accounts and organizations follow the same procedures to add, upda
      - Verify your **Email** and **Full name**.
      - If your bank is listed, select your bank's name.
      - If your bank is not listed, select **Search for your bank**.
-   - ELEPHANT
-     - Select **Secure, 1-click checkout with Link** and enter your
-       Link **email address** and **phone number**.
-     - If you don't already use Link, you must fill out the card information
-       form to store a card for Link payments.
+   - Select **Use this card** to pay through Link. 
 1. Finish adding the payment method by selecting **Add payment method**.
 
 {{< /tab >}}
@@ -90,16 +85,16 @@ To add a payment method:
 After adding one or more payment methods, you can set one as a default method. 
 
 1. From **Billing**, go to **Payment methods**. 
-1. Select the three dots for method you want as default from the **Payment method** table.
-1. Choose **Set as default**.   
+2. From the **Payment method table**, find the method to set as the default.
+3. Select the three dots, then choose **Set as default**.   
 
 ### Remove payment method 
 
 To remove a single payment method:
 
 1. From **Billing**, go to **Payment methods**. 
-1. Select the three dots for method you want as default from the **Payment method** table.
-1. Choose **Remove**.  
+1. From the **Payment method table**, find the method to remove.
+1. Select the three dots, then choose **Remove**.  
 
 If you have an active plan, you can't remove your default payment. To remove all payment methods, [downgrade your
 subscription](/subscription/change) to a free subscription.
