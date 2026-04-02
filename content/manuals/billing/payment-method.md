@@ -161,7 +161,7 @@ To add a payment method:
 {{< /tab >}}
 {{< /tabs >}}
 
-## Enable pay by invoice
+## Enable and disable pay by invoice
 
 {{< summary-bar feature_name="Pay by invoice" >}}
 
@@ -174,11 +174,14 @@ At renewal time, instead of automatic payment, you'll receive an invoice via
 email that you must pay manually. Pay by invoice is not available for
 subscription upgrades or changes.
 
+Follow these steps to enable or disable pay by invoice:
+
 1. Sign in to [Docker Home](https://app.docker.com/) and select your
    organization.
 1. Select **Billing**.
 1. Select **Payment methods**, then **Pay by invoice**.
-1. To enable pay by invoice, select the toggle.
+   * To enable pay by invoice, select the toggle labeled **Disabled**.
+   * To disable pay by invoice, select the toggle labeled **Enabled**.
 1. Confirm your billing contact details. If you need to change them, select
    **Change** and enter your new details.
 
