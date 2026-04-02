@@ -40,8 +40,8 @@ Paid personal accounts and organizations follow the same procedures to add, upda
 {{< tabs >}}
 {{< tab name="Docker subscription" >}}
 
-1. Sign in to [Docker Home](https://app.docker.com/) and choose either your account or organization.
-1. Choose **Billing**, then select **Payment methods**.
+1. Sign in to [Docker Home](https://app.docker.com/). Select your account name for personal accounts, or select your organization name for organization accounts.
+1. Select **Billing**, then **Payment methods**.
 1. Select **Add payment method** and enter your new payment information:
    - For first time setup, fill in your billing information. 
    - To purchase as a business, provide your tax ID. 
@@ -85,28 +85,25 @@ To add a payment method:
 After adding one or more payment methods, you can set one as a default method. 
 
 1. From **Billing**, go to **Payment methods**. 
-2. Find the payment method you want to set as default from the **Payment method table**.
-3. Select the three dots, then choose **Set as default**.   
+1. Find the payment method you want to set as default from the **Payment method** table.
+1. Select the three dots, then choose **Set as default**.   
 
 ### Remove payment method 
 
 To remove a single payment method:
 
 1. From **Billing**, go to **Payment methods**. 
-1. Find the payment method you want to remove from the **Payment method table**.
+1. Find the payment method you want to remove from the **Payment method** table.
 1. Select the three dots, then choose **Remove**.  
 
-If you have an active plan, you can't remove your default payment. To remove all payment methods, [downgrade your
-subscription](/subscription/change) to a free subscription.
+To remove your default payment method, first set a different payment method as default, or [downgrade to a free subscription](/subscription/change).
 
 ## Enable and disable pay by invoice
 
 > [!TIP]
 > Do you need to pay by invoice? [Upgrade to a Docker Business or Docker Team plan](https://www.docker.com/pricing?ref=Docs&refAction=DocsBillingPaymentMethod) and choose the annual subscription.
 
-When you select this
-payment method, you'll pay upfront for your first subscription period using a
-payment card or ACH bank transfer.
+Pay by invoice requires you to pay upfront for your first subscription period using a payment card or ACH bank transfer.
 
 At renewal time, instead of automatic payment, you'll receive an invoice via
 email that you must pay manually. Pay by invoice is not available for
