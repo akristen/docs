@@ -35,14 +35,6 @@ To add seats:
 
 You can now add more members to your organization. For more information, see [Manage organization members](../admin/organization/members.md).
 
-### Add seats for Docker Build Cloud
-
-To add seats for Docker Build Cloud:
-
-1. Sign in to [Docker Home](https://app.docker.com) and select **Build Cloud**.
-1. Select **Account settings**, then **Add seats**.
-1. Select the number of seats you want to add, then select **Add seats**.
-
 ## Volume pricing
 
 Docker offers volume pricing for Docker Business subscriptions starting at 25 seats. Contact the [Docker Sales Team](https://www.docker.com/pricing/contact-sales/) for more information.
@@ -62,11 +54,3 @@ If you have a sales-assisted Docker Business subscription, contact your account 
 1. Follow the on-screen instructions to complete removing seats.
 
 You can cancel the removal of seats before your next billing cycle. To do so, select **Cancel change**.
-
-### Remove seats for Docker Build Cloud
-
-To remove seats for Docker Build Cloud:
-
-1. Sign in to [Docker Home](https://app.docker.com) and select **Build Cloud**.
-1. Select **Account settings**, then **Remove seats**.
-1. Follow the on-screen instructions to complete removing seats.

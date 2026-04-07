@@ -57,15 +57,6 @@ To downgrade your subscription:
 1. Select the action icon and then **Cancel subscription**.
 1. Fill out the feedback survey to continue with cancellation.
 
-### Downgrade Docker Build Cloud
-
-To downgrade your Docker Build Cloud subscription:
-
-1. Sign in to [Docker Home](https://app.docker.com) and select **Build Cloud**.
-1. Select **Account settings**, then **Downgrade**.
-1. To confirm your downgrade, type **DOWNGRADE** in the text field and select **Yes, continue**.
-1. The account settings page will update with a notification bar notifying you of your downgrade date (start of next billing cycle).
-
 > [!IMPORTANT]
 >
 > If you have a sales-assisted Docker Business subscription, contact your account manager to downgrade your subscription.
