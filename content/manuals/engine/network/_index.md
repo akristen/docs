@@ -31,15 +31,9 @@ and the concepts around container networking.
 
 ## Default network
 
-When Docker Engine starts for the first time, it uses a single
-built-in network called the default bridge network. This means that when 
-you start container without specifying `--network` option, the container 
-defaults to the `bridge` value. When your Docker host (the virtual or physical 
-machine running Docker) has Internet access, no additional configuration is 
-needed for the container to have Internet access.
-
-The Docker bridge network is an isolated network for containers to communicate 
-with each other. 
+When Docker Engine starts for the first time, the default bridge network is created and containers attach to it automatically. The Docker bridge network is an isolated network for containers to communicate 
+with each other. Containers 
+default to the `bridge` value if no other `network_mode` option is specified.  
 
 * By default, the bridge network gives your containers 
 access to external networks through masquerading, or borrowing your Docker 
@@ -51,15 +45,15 @@ going to your containers with your Docker host's IP address.
 If you want to test the bridge network, you can send a ping request 
 from an active container and wait for the reply. For example:
 
-    ```console
-    $ docker run --rm -ti busybox ping -c1 docker.com
-    PING docker.com (23.185.0.4): 56 data bytes
-    64 bytes from 23.185.0.4: seq=0 ttl=62 time=6.564 ms
+  ```console
+  $ docker run --rm -ti busybox ping -c1 docker.com
+  PING docker.com (23.185.0.4): 56 data bytes
+  64 bytes from 23.185.0.4: seq=0 ttl=62 time=6.564 ms
 
-    --- docker.com ping statistics ---
-    1 packets transmitted, 1 packets received, 0% packet loss
-    round-trip min/avg/max = 6.564/6.564/6.564 ms
-    ```
+  --- docker.com ping statistics ---
+  1 packets transmitted, 1 packets received, 0% packet loss
+  round-trip min/avg/max = 6.564/6.564/6.564 ms
+  ```
 
 ## User-defined networks
 
