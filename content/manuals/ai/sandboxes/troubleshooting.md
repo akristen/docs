@@ -34,6 +34,12 @@ To allow all outbound traffic instead:
 $ sbx policy allow network "**"
 ```
 
+## Can't reach a service running on the host
+
+If a request to `127.0.0.1` or a local network IP returns "connection refused"
+from inside a sandbox, the address is not routable from within the sandbox VM.
+See [Accessing host services from a sandbox](usage.md#accessing-host-services-from-a-sandbox).
+
 ## Docker authentication failure
 
 If you see a message like `You are not authenticated to Docker`, your login
@@ -58,20 +64,6 @@ client inside the sandbox (such as a process in a Docker container) isn't
 configured to use the forward proxy. See
 [Monitoring network activity](security/policy.md#monitoring)
 for details.
-
-## Docker not available inside the sandbox on Windows
-
-On Windows, sandboxes use non-docker template variants by default, so `docker`
-commands aren't available inside the sandbox. To use Docker inside a sandbox on
-Windows, specify a `-docker` template:
-
-```console
-$ sbx run --template docker.io/docker/sandbox-templates:claude-code-docker claude
-```
-
-The `-docker` variants work on Windows but have slower startup times. See
-[Base images](agents/custom-environments.md#base-images) for details and the
-full list of templates.
 
 ## Docker build export fails with "lchown: operation not permitted"
 
@@ -100,6 +92,28 @@ sandbox, clean it up manually:
 $ git worktree remove .sbx/<sandbox-name>-worktrees/<branch-name>
 $ git branch -D <branch-name>
 ```
+
+## Signed Git commits
+
+Agents inside a sandbox can't sign commits because signing keys (GPG, SSH)
+aren't available in the sandbox environment. Commits created by an agent are
+unsigned.
+
+If your repository or organization requires signed commits, use one of these
+workarounds:
+
+- **Commit outside the sandbox.** Let the agent make changes without
+  committing, then commit and sign from your host terminal.
+
+- **Sign after the fact.** Let the agent commit inside the sandbox, then
+  re-sign the commits on your host:
+
+  ```console
+  $ git rebase --exec 'git commit --amend --no-edit -S' origin/main
+  ```
+
+  This replays each commit on the branch and re-signs it with your local
+  signing key.
 
 ## Clock drift after sleep/wake
 
@@ -136,3 +150,8 @@ Windows:
 ```powershell
 > Remove-Item -Recurse -Force "$env:LOCALAPPDATA\DockerSandboxes"
 ```
+
+## Report an issue
+
+If you've exhausted the steps above and the problem persists, file a GitHub
+issue at [github.com/docker/sbx-releases/issues](https://github.com/docker/sbx-releases/issues).
