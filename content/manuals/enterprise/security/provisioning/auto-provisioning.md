@@ -4,8 +4,6 @@ linkTitle: Auto-provisioning
 description: Learn how Just-in-Time provisioning works with your SSO connection.
 keywords: user provisioning, just-in-time provisioning, JIT, autoprovision, Docker Admin, admin, security
 weight: 10
-aliases:
- - /security/for-admins/provisioning/just-in-time/
 ---
 
 Auto-provisioning automatically adds users to your organization when they sign in with email addresses that match your verified domains. You must verify a domain before enabling auto-provisioning.

@@ -56,7 +56,7 @@ Create groups in your IdP using the format: `organization:team`.
 
 For example:
 
-- For the "developers" team in the "moby" organization: `mobdy:developers`
+- For the "developers" team in the "moby" organization: `moby:developers`
 - For multi-organization access: `moby:backend` and `whale:desktop`
 
 Docker creates teams automatically if they don't already exist when groups sync.
