@@ -7,8 +7,9 @@ keywords: sso troubleshooting, single sign-on errors, authentication issues, ide
 tags: [Troubleshooting]
 toc_max: 2
 aliases:
-    - /security/for-admins/single-sign-on/troubleshoot/
-    - /security/troubleshoot/troubleshoot-sso/
+  - /security/for-admins/single-sign-on/troubleshoot/
+  - /security/troubleshoot/troubleshoot-sso/
+  - /enterprise/troubleshoot/troubleshoot-sso/
 ---
 
 This page describes common single sign-on (SSO) errors and their solutions. Issues can stem from your identity provider (IdP) configuration or Docker settings.
@@ -40,6 +41,7 @@ For further troubleshooting, check your IdP's documentation or contact their sup
 ### Error message
 
 When this issue occurs, the following error message is common:
+
 ```text
 Some of the groups assigned to the user are not formatted as '<organization name>:<team name>'. Directory groups will be ignored and user will be provisioned into the default organization and team.
 ```
@@ -57,6 +59,7 @@ Some of the groups assigned to the user are not formatted as '<organization name
 ### Steps to replicate
 
 To replicate this issue:
+
 1. Attempt to sign in to Docker using SSO.
 2. The user is assigned groups in the IdP but does not get placed in the expected Docker Team.
 3. Review Docker logs or IdP logs to find the error message.
@@ -64,6 +67,7 @@ To replicate this issue:
 ### Solutions
 
 Update group names in your IdP:
+
 1. Go to your IdP's group management section.
 2. Check the groups assigned to the affected user.
 3. Ensure each group follows the required format: `<organization>:<team>`
@@ -75,6 +79,7 @@ Update group names in your IdP:
 ### Error message
 
 When this issue occurs, the following error message is common:
+
 ```text
 User '$username' is not assigned to this SSO organization. Contact your administrator. TraceID: XXXXXXXXXXXXX
 ```
@@ -110,8 +115,8 @@ If you have SCIM enabled, troubleshoot your SCIM connection using the following 
 1. Select **Admin Console**, then **SSO and SCIM**.
 1. In the SSO connections table, select the **Action** menu and then **View error logs**. For more details on specific errors, select **View error details** next to an error message. Note any errors you see on this page.
 1. Navigate back to the **SSO and SCIM** page of the Admin Console and verify your SCIM configuration:
-    - Ensure that the SCIM Base URL and API Token in your IdP match those provided in the Docker Admin Console.
-    - Verify that SCIM is enabled in both Docker and your IdP.
+   - Ensure that the SCIM Base URL and API Token in your IdP match those provided in the Docker Admin Console.
+   - Verify that SCIM is enabled in both Docker and your IdP.
 1. Ensure that the attributes being synced from your IdP match Docker's [supported attributes](/manuals/enterprise/security/provisioning/scim.md#supported-attributes) for SCIM.
 1. Test user provisioning by trying to provision a test user through your IdP and verify if they appear in Docker.
 
@@ -120,6 +125,7 @@ If you have SCIM enabled, troubleshoot your SCIM connection using the following 
 ### Error message
 
 When this issue occurs, the following error message is common:
+
 ```text
 IdP-Initiated sign in is not enabled for connection '$ssoConnection'.
 ```
@@ -143,6 +149,7 @@ You can hide the Docker SSO app from users in your IdP. This prevents users from
 ### Error message
 
 When this issue occurs, the following error message is common:
+
 ```text
 Not enough seats in organization '$orgName'. Add more seats or contact your administrator.
 ```
@@ -166,6 +173,7 @@ Review your organization members and pending invitations. Remove inactive users 
 ### Error message
 
 When this issue occurs, the following error message is common:
+
 ```text
 Domain '$emailDomain' is not verified for your SSO connection. Contact your company administrator. TraceID: XXXXXXXXXXXXXX
 ```
@@ -191,6 +199,7 @@ Add and verify all domains and subdomains used as UPN by your IdP and associate 
 ### Error message
 
 When this issue occurs, the following error message is common:
+
 ```text
 We couldn't find your session. You may have pressed the back button, refreshed the page, opened too many sign-in dialogs, or there is some issue with cookies. Try signing in again. If the issue persists, contact your administrator.
 ```
@@ -198,6 +207,7 @@ We couldn't find your session. You may have pressed the back button, refreshed t
 ### Causes
 
 The following causes may create this issue:
+
 - The user pressed the back or refresh button during authentication.
 - The authentication flow lost track of the initial request, preventing completion.
 
@@ -216,6 +226,7 @@ Close the browser tab and restart the authentication flow from the Docker applic
 ### Error message
 
 When this issue occurs, the following error message is common:
+
 ```text
 The name ID sent by the identity provider is not an email address. Contact your company administrator.
 ```
@@ -223,11 +234,13 @@ The name ID sent by the identity provider is not an email address. Contact your 
 ### Causes
 
 The following causes may create this issue:
+
 - The IdP sends a Name ID (UPN) that does not comply with the email format required by Docker.
 - Docker SSO requires the Name ID to be the primary email address of the user.
 
 ### Solutions
 
 In your IdP, ensure the Name ID attribute format is correct:
+
 1. Verify that the Name ID attribute format in your IdP is set to `EmailAddress`.
 2. Adjust your IdP settings to return the correct Name ID format.
