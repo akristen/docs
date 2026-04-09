@@ -33,7 +33,7 @@ to invite members to.
    > [!NOTE]
    >
    > When you invite members, you assign them a role.
-   > See [Roles and permissions](/security/for-admins/roles-and-permissions/)
+   > See [Roles and permissions](/enterprise/security/roles-and-permissions/core-roles/)
    > for details about the access permissions for each role.
 
    Pending invitations appear on the Members page. The invitees receive an

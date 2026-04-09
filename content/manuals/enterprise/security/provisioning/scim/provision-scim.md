@@ -35,7 +35,7 @@ For additional details about supported attributes and SCIM, see
 > your SCIM values.
 >
 > Alternatively, you can disable JIT provisioning to rely solely on SCIM.
-> For details, see [Just-in-Time](just-in-time.md).
+> For details, see [Just-in-Time](/enterprise/security/provisioning/just-in-time).
 
 ## Enable SCIM in Docker
 
@@ -219,7 +219,7 @@ group will inherit these attributes upon provisioning.
 
 ### Step one: Configure attribute mappings
 
-1. Complete the [SCIM provisioning setup](#enable-scim-in-docker).
+1. Complete the [SCIM provisioning setup](/enterprise/security/provisioning/scim/provision-scim/#enable-scim-in-docker).
 1. In the Azure Portal, open **Microsoft Entra ID** >
    **Enterprise Applications**, and select your SCIM application.
 1. Go to **Provisioning** > **Mappings** >
@@ -228,7 +228,7 @@ group will inherit these attributes upon provisioning.
    - `userPrincipalName` -> `userName`
    - `mail` -> `emails.value`
    - Optional. Map `dockerRole`, `dockerOrg`, or `dockerTeam` using one of the
-     [mapping methods](#step-two-choose-a-role-mapping-method).
+     [mapping methods](/enterprise/security/provisioning/scim/provision-scim/#set-up-role-mapping).
 1. Remove any unsupported attributes to prevent sync errors.
 1. Optional. Go to **Mappings** > **Provision Azure Active Directory Groups**:
    - If group provisioning causes errors, set **Enabled** to **No**.

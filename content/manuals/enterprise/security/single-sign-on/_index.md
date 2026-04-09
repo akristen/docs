@@ -49,11 +49,11 @@ assigned to an organization, and added to a team.
 > [!IMPORTANT]
 >
 > Docker plans to deprecate CLI password-based sign-in in future releases.
-Using a PAT ensures continued CLI access. For more information, see the
-[security announcement](/manuals/security/security-announcements.md#deprecation-of-password-logins-on-cli-when-sso-enforced).
+> Using a PAT ensures continued CLI access. For more information, see the
+> [security announcement](/security/security-announcements.> md#deprecation-of-password-logins-on-cli-when-sso-enforced).
 
 ## Next steps
 
 - Start [configuring SSO](connect.md).
-- Read the [FAQs](/enterprise/security/single-sign-on/faqs/general).
-- [Troubleshoot](/enterprise/security/single-sign-on/faqs/troubleshoot-sso/) SSO issues.
+- Read the [FAQs](/enterprise/security/single-sign-on/FAQs/general).
+- [Troubleshoot](/enterprise/security/single-sign-on/troubleshoot-sso) SSO issues.
