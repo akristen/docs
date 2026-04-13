@@ -25,7 +25,7 @@ Docker supports the following SCIM attributes:
 | `active`          | Indicates if a user is enabled or disabled, set to "false" to de-provision a user |
 
 For additional details about supported attributes and SCIM, see
-[Docker Hub API SCIM reference](/reference/api/hub/latest/#tag/scim).
+[Docker Hub API SCIM reference](/reference/api/hub/latest.md#tag/scim).
 
 > [!IMPORTANT]
 >
@@ -35,7 +35,7 @@ For additional details about supported attributes and SCIM, see
 > your SCIM values.
 >
 > Alternatively, you can disable JIT provisioning to rely solely on SCIM.
-> For details, see [Just-in-Time](/enterprise/security/provisioning/just-in-time).
+> For details, see [Just-in-Time](/manuals/enterprise/security/provisioning/just-in-time.md).
 
 ## Enable SCIM in Docker
 
@@ -150,7 +150,7 @@ Next, [set up role mapping](#set-up-role-mapping).
 
 ## Set up role mapping
 
-You can assign [Docker roles](/enterprise/security/roles-and-permissions/) to
+You can assign [Docker roles](/manuals/enterprise/security/roles-and-permissions/_index.md) to
 users by adding optional SCIM attributes in your IdP. These attributes override
 default role and team values set in your SSO configuration.
 
@@ -164,7 +164,7 @@ The following table lists the supported optional user-level attributes:
 
 | Attribute    | Possible values                          | Notes                                                                                                                                                                                                                                                            |
 | ------------ | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `dockerRole` | `member`, `editor`, or `owner`           | If not set, the user defaults to the `member` role. Setting this attribute overrides the default.<br><br>For role definitions, see [Roles and permissions](/enterprise/security/roles-and-permissions/).                                                                         |
+| `dockerRole` | `member`, `editor`, or `owner`           | If not set, the user defaults to the `member` role. Setting this attribute overrides the default.<br><br>For role definitions, see [Roles and permissions](/manuals/enterprise/security/roles-and-permissions/_index.md).                                        |
 | `dockerOrg`  | Docker `organizationName` (e.g., `moby`) | Overrides the default organization configured in your SSO connection.<br><br>If unset, the user is provisioned to the default organization. If `dockerOrg` and `dockerTeam` are both set, the user is provisioned to the team within the specified organization. |
 | `dockerTeam` | Docker `teamName` (e.g., `developers`)   | Provisions the user to the specified team in the default or specified organization. If the team doesn't exist, it is automatically created.<br><br>You can still use [group mapping](group-mapping.md) to assign users to multiple teams across organizations.   |
 
@@ -176,7 +176,7 @@ This value is required in your identity provider when creating custom SCIM attri
 
 ### Step one: Set up role mapping in Okta
 
-1. Setup [SSO](/enterprise/security/single-sign-on/connect) and SCIM first.
+1. Setup [SSO](/manuals/enterprise/security/single-sign-on/connect.md) and SCIM first.
 1. In the Okta admin portal, go to **Directory**, select **Profile Editor**,
    and then **User (Default)**.
 1. Select **Add Attribute** and configure the values for the role, organization,
@@ -219,7 +219,7 @@ group will inherit these attributes upon provisioning.
 
 ### Step one: Configure attribute mappings
 
-1. Complete the [SCIM provisioning setup](/enterprise/security/provisioning/scim/provision-scim/#enable-scim-in-docker).
+1. Complete the [SCIM provisioning setup](/manuals/enterprise/security/provisioning/scim/provision-scim.md#enable-scim-in-docker).
 1. In the Azure Portal, open **Microsoft Entra ID** >
    **Enterprise Applications**, and select your SCIM application.
 1. Go to **Provisioning** > **Mappings** >
@@ -228,7 +228,7 @@ group will inherit these attributes upon provisioning.
    - `userPrincipalName` -> `userName`
    - `mail` -> `emails.value`
    - Optional. Map `dockerRole`, `dockerOrg`, or `dockerTeam` using one of the
-     [mapping methods](/enterprise/security/provisioning/scim/provision-scim/#set-up-role-mapping).
+     [mapping methods](/manuals/enterprise/security/provisioning/scim/provision-scim.md#set-up-role-mapping).
 1. Remove any unsupported attributes to prevent sync errors.
 1. Optional. Go to **Mappings** > **Provision Azure Active Directory Groups**:
    - If group provisioning causes errors, set **Enabled** to **No**.
@@ -368,5 +368,5 @@ To disable SCIM:
 
 ## Next steps
 
-- Set up [Group mapping](/enterprise/security/provisioning/scim/group-mapping/).
-- [Troubleshoot provisioning](/enterprise/security/provisioning/troubleshoot-provisioning/).
+- Set up [Group mapping](/manuals/enterprise/security/provisioning/scim/group-mapping.md).
+- [Troubleshoot provisioning](/manuals/enterprise/security/provisioning/troubleshoot-provisioning.md).
