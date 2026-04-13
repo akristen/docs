@@ -30,8 +30,9 @@ grid:
     icon: settings
     link: /admin/organization/general-settings/
   - title: SSO and SCIM
-    description: "Set up [Single Sign-On](/security/for-admins/single-sign-on/)
-      and [SCIM](/security/for-admins/provisioning/scim/) for your organization."
+    description:
+      "Set up [Single Sign-On](/manuals/enterprise/security/single-sign-on/_index.md)
+      and [SCIM](/manuals/enterprise/security/provisioning/scim/_index.md) for your organization."
     icon: key
   - title: Domain management
     description: Add, verify, and audit your domains.
