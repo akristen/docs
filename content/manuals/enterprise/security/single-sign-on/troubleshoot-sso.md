@@ -105,7 +105,7 @@ to re-enable it:
 **Manually invite users**
 
 When JIT is disabled, users are not automatically added to your organization when they authenticate through SSO.
-To manually invite users, see [Invite members](/manuals/admin/organization/members.md#invite-members)
+To manually invite users, see [Invite members](/manuals/admin/organization/members.md#invite-members).
 
 **Configure SCIM provisioning**
 
