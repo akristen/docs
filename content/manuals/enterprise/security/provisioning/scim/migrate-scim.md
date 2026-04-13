@@ -71,7 +71,7 @@ become inaccessible.
 
 1. Confirm all JIT-provisioned users are assigned to the Docker application in
    your identity provider.
-2. Verify identity provider group to Docker team mappings are configured and
+2. Verify identity provider group to Docker Team mappings are configured and
    tested.
 
 Users not assigned to the Docker application in your identity provider are not

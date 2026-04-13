@@ -21,7 +21,7 @@ IdP. This issue usually surfaces as incorrect role or team assignment.
 ### Causes
 
 - JIT provisioning is enabled, and Docker is using values from your IdP's
-  SSO login flow to provision the user, which overrides
+  SSO sign in flow to provision the user, which overrides
   SCIM-provided attributes.
 - SCIM was enabled after the user was already provisioned via JIT, so SCIM
   updates don't take effect.

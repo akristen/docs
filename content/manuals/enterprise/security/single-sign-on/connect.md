@@ -197,7 +197,7 @@ Complete the integration by pasting your IdP values into Docker.
    - From Azure AD: **Login URL**
    - **Certificate (Base64)** contents
 1. Return to the Docker Admin Console, then paste the **Login URL** and **Certificate (Base64)** values.
-1. Choose your domain from the dropdown.
+1. Choose your domain from the drop-down.
 1. Optional. Select a default team, if required by your org.
 1. Review and select **Create connection**.
 
@@ -228,7 +228,7 @@ If you have multiple IdPs, choose the sign-in option **Continue with SSO**. If y
 
 ## Configure multiple IdPs
 
-Docker supports multiple identity provider (IdP) configurations by letting you associate one domain with more than one IdP. Each connection must use the same domain, which lets users choose their IdP when they select **Continue with SSO** at login.
+Docker supports multiple identity provider (IdP) configurations by letting you associate one domain with more than one IdP. Each connection must use the same domain, which lets users choose their IdP when they select **Continue with SSO** at sign in.
 
 To add multiple IdPs:
 

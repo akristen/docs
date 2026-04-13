@@ -1,6 +1,6 @@
 ---
 title: Group mapping
-description: Automate team membership by syncing identity provider groups with Docker teams
+description: Automate team membership by syncing identity provider groups with Docker Teams
 keywords: Group Mapping, SCIM, Docker Admin, admin, security, team management, user provisioning, identity provider
 aliases:
 - /admin/company/settings/group-mapping/
@@ -30,7 +30,7 @@ Before you being, you must have:
 
 ## How group mapping works
 
-Group mapping keeps your Docker teams synchronized with your IdP groups through these key components:
+Group mapping keeps your Docker Teams synchronized with your IdP groups through these key components:
 
 - Authentication flow: When users sign in through SSO, your IdP shares user attributes with Docker including email, name, and group memberships.
 - Automatic updates: Docker uses these attributes to create or update user profiles and manage team assignments based on IdP group changes.
