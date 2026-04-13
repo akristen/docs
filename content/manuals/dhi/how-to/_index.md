@@ -1,6 +1,6 @@
 ---
 title: How-tos
-description: Step-by-step guidance for working with Docker Hardened Images, from discovery to debugging.
+description: Step-by-step guidance for working with Docker Hardened Images, from discovery to governance.
 weight: 20
 params:
   grid_discover:
@@ -33,18 +33,10 @@ params:
       description: Learn how to pull, run, and reference Docker Hardened Images in Dockerfiles, CI pipelines, and standard development workflows.
       icon: play_arrow
       link: /dhi/how-to/use/
-    - title: Use a Docker Hardened Image in Kubernetes
-      description: Learn how to use Docker Hardened Images in Kubernetes deployments.
-      icon: play_arrow
-      link: /dhi/how-to/k8s/
     - title: Use a Docker Hardened Image chart
       description: Learn how to use a Docker Hardened Image chart.
       icon: leaderboard
       link: /dhi/how-to/helm/
-    - title: Use Extended Lifecycle Support for Docker Hardened Images
-      description: Learn how to use Extended Lifecycle Support with Docker Hardened Images.
-      icon: update
-      link: /dhi/how-to/els/
     - title: Manage Docker Hardened Images and charts
       description: Learn how to manage your mirrored and customized Docker Hardened Images in your organization.
       icon: reorder
@@ -63,17 +55,12 @@ params:
       description: Learn how to use image policies with Docker Scout for Docker Hardened Images.
       icon: policy
       link: /dhi/how-to/policies/
-  grid_troubleshoot:
-    - title: Debug a Docker Hardened Image
-      description: Use Docker Debug to inspect a running container based on a hardened image without modifying it.
-      icon: terminal
-      link: /dhi/how-to/debug/
 ---
 
 This section provides practical, task-based guidance for working with Docker
 Hardened Images (DHIs). Whether you're evaluating DHIs for the first time or
 integrating them into a production CI/CD pipeline, these topics cover the key
-tasks across the adoption journey, from discovery to debugging.
+tasks across the adoption journey: discover, adopt, verify, and govern.
 
 The topics are organized around the typical lifecycle of working with DHIs, but
 you can use them as needed based on your specific workflow.
@@ -110,12 +97,4 @@ Enforce policies to maintain security and compliance.
 
 {{< grid
   items="grid_govern"
->}}
-
-## Troubleshoot
-
-Debug containers based on DHIs without modifying the image.
-
-{{< grid
-  items="grid_troubleshoot"
 >}}
