@@ -138,7 +138,7 @@ automatically via SSO and SCIM. See the following for more details:
   > are different features. For more details, see
   > [Enforcing sign-in versus enforcing single sign-on (SSO)](/manuals/enterprise/security/enforce-sign-in/_index.md#enforcing-sign-in-versus-enforcing-single-sign-on-sso).
 
-- [Configure SCIM](/manuals/enterprise/security/provisioning/scim.md) to
+- [Configure SCIM](/manuals/enterprise/security/provisioning/scim/_index.md) to
   automatically provision, add, and de-provision members to Docker through
   your identity provider.
 

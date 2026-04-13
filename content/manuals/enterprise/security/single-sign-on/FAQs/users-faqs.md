@@ -39,7 +39,7 @@ For detailed instructions, see [Configure single sign-on](/manuals/enterprise/se
 
 Docker SSO provides Just-in-Time (JIT) provisioning by default. Users are provisioned when they authenticate with SSO. If users leave the organization, administrators must manually [remove the user](/manuals/admin/organization/members.md#remove-a-member-or-invitee) from the organization.
 
-[SCIM](/manuals/enterprise/security/provisioning/scim.md) provides full synchronization with users and groups. When using SCIM, the recommended configuration is to turn off JIT so all auto-provisioning is handled by SCIM.
+[SCIM](/manuals/enterprise/security/provisioning/scim/_index.md) provides full synchronization with users and groups. When using SCIM, the recommended configuration is to turn off JIT so all auto-provisioning is handled by SCIM.
 
 Additionally, you can use the [Docker Hub API](/reference/api/hub/latest.md) to complete this process.
 
