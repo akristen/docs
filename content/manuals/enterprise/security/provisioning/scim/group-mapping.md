@@ -8,6 +8,7 @@ aliases:
 - /docker-hub/group-mapping/
 - /security/for-admins/group-mapping/
 - /security/for-admins/provisioning/scim/group-mapping/
+- /enterprise/security/provisioning/group-mapping/
 weight: 20
 ---
 

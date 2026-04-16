@@ -2,7 +2,7 @@
 title: Troubleshoot single sign-on
 linkTitle: Troubleshoot
 description: Troubleshoot common Docker single sign-on configuration and authentication issues
-weight: 10
+weight: 40
 keywords: sso troubleshooting, single sign-on errors, authentication issues, identity provider problems
 tags: [Troubleshooting]
 toc_max: 2
