@@ -106,7 +106,7 @@ addresses:
    > [!NOTE]
    >
    > When you invite members, you assign them a role.
-   > See [Roles and permissions](/manuals/enterprise/security/roles-and-permissions/_index.md)
+   > See [Roles and permissions](/manuals/enterprise/security/roles-and-permissions/core-roles.md)
    > for details about the access permissions for each role.
 
 Pending invitations appear on the Members page. The invitees receive an email
