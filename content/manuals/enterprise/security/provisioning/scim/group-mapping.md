@@ -192,3 +192,8 @@ Once complete, a user who signs in to Docker through SSO is automatically added 
 > [!TIP]
 >
 > [Enable SCIM](provision-scim.md) to take advantage of automatic user provisioning and de-provisioning. If you don't enable SCIM users are only automatically provisioned. You have to de-provision them manually.
+
+## Next steps
+
+- [Assign roles](/manuals/enterprise/security/roles-and-permissions/core-roles.md) to members of your org.
+- [Enforce sign in](/manuals/enterprise/security/enforce-sign-in.md), if needed.

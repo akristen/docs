@@ -57,3 +57,9 @@ SCIM automates:
 > To remove those users, delete them manually from your Docker organization.
 > For more information, see
 > [Manage organization members](/manuals/admin/organization/members.md).
+
+## Next steps
+
+- [Migrate JIT to SCIM](/manuals/enterprise/security/provisioning/scim/migrate-scim.md) if users were provisioned with Just-in-Time (JIT) before you enabled SCIM.
+- [Group mapping](/manuals/enterprise/security/provisioning/scim/group-mapping.md) to sync identity provider groups with members.
+- [Troubleshoot provisioning](/manuals/enterprise/security/provisioning/troubleshoot-provisioning.md) for SCIM, JIT, and attribute issues.

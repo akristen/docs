@@ -114,6 +114,15 @@ You can bulk invite uncaptured users to your organization using the exported
 CSV file. For more information on bulk inviting users, see
 [Manage organization members](/manuals/admin/organization/members.md).
 
+## Auto-provisioning
+
+[Auto-provisioning](/manuals/enterprise/security/provisioning/auto-provisioning.md) uses verified domains to associate organization members with email address that match the verified domains. To override auto-provisioning, you can configure one of the two alternative methods:
+
+- [Just-in-Time (JIT)]() provisioning
+- System for Cross-domain Identity Management (SCIM).
+
+To enable or disable auto-provisioning for a verified domain, go to **Admin Console** > **Domain management**. Next to the domain in the list, select the **Actions menu**, then **Enable auto-provisioning** or **Disable auto-provisioning**.
+
 ## Delete a domain
 
 Deleting a domain removes its TXT record value and disables any associated auto-provisioning.

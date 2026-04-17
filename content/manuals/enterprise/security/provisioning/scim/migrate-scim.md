@@ -174,3 +174,9 @@ If a user fails to reappear after removal:
 
 For more troubleshooting guidance, see
 [Troubleshoot provisioning](/manuals/enterprise/security/provisioning/troubleshoot-provisioning.md).
+
+## Next steps
+
+- Set up [Group mapping](/manuals/enterprise/security/provisioning/scim/group-mapping.md).
+- [Assign roles](/manuals/enterprise/security/roles-and-permissions/core-roles.md) to members of your org.
+- [Enforce sign in](/manuals/enterprise/security/enforce-sign-in.md), if needed.

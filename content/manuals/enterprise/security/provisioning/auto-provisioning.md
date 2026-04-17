@@ -1,7 +1,7 @@
 ---
 title: Auto-provisioning
-linkTitle: Auto-provisioning
-description: Learn how Just-in-Time provisioning works with your SSO connection.
+linkTitle: Auto-provision
+description: Auto-provision users by associating members to your organization when email addresses match a verified domain.
 keywords: user provisioning, just-in-time provisioning, JIT, autoprovision, Docker Admin, admin, security
 weight: 10
 ---
@@ -49,3 +49,10 @@ and configure the domain for the organization at the company level.
 1. Select the **Actions menu** next to your domain.
 1. Select **Disable auto-provisioning**.
 1. Select **Disable** to confirm.
+
+## Next steps
+
+To choose a different method to provision users, you can set up:
+
+- [SCIM provisioning](/manuals/enterprise/security/provisioning/scim/_index.md) for advanced user management.
+- [Group mapping](/manuals/enterprise/security/provisioning/scim/group-mapping.md) to assign users to teams automatically.
