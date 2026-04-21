@@ -1,7 +1,7 @@
 ---
 title: Onboard your organization
 linkTitle: Onboard
-weight: 20
+weight: 30
 description: Get started onboarding your Docker Team or Business organization.
 keywords: business, team, organizations, get started, onboarding, Admin Console, organization management,
 toc_min: 1
@@ -10,6 +10,7 @@ aliases:
   - /docker-hub/onboard/
   - /docker-hub/onboard-team/
   - /docker-hub/onboard-business/
+  - /admin/organization/onboard/
 ---
 
 {{< summary-bar feature_name="Admin orgs" >}}
@@ -39,17 +40,17 @@ Before you start onboarding your organization, ensure you:
   > When purchasing a self-serve subscription, the on-screen instructions
   > guide you through creating an organization. If you have purchased a
   > subscription through Docker Sales and you have not yet created an
-  > organization, see [Create an organization](/manuals/admin/organization/orgs.md).
+  > organization, see [Create an organization](/manuals/admin/organization/setup/orgs.md).
 
 - Familiarize yourself with Docker concepts and terminology in
-  the [administration overview](../_index.md).
+  the [administration overview](../../_index.md).
 
 ## Onboard with guided setup
 
 The Admin Console has a guided setup to help you
 onboard your organization. The guided setup's steps consist of basic onboarding
 tasks. If you want to onboard outside of the guided setup,
-see [Recommended onboarding steps](/manuals/admin/organization/onboard.md#recommended-onboarding-steps).
+see [Recommended onboarding steps](/manuals/admin/organization/setup/onboard.md#recommended-onboarding-steps).
 
 To onboard using the guided setup,
 navigate to the [Admin Console](https://app.docker.com) and
@@ -169,7 +170,7 @@ security posture:
 
 ## What's next
 
-- [Manage Docker products](./manage-products.md) to configure access and view usage.
+- [Manage Docker products](../manage-products.md) to configure access and view usage.
 - Configure [Hardened Docker Desktop](/manuals/enterprise/security/hardened-desktop/_index.md) to improve your organization’s security posture for containerized development.
 - [Manage your domains](/manuals/enterprise/security/domain-management.md) to ensure that all Docker users in your domain are part of your organization.
 

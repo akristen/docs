@@ -11,7 +11,7 @@ With the right configurations, you can ensure your developers have easy access t
 
 Before setting up roles and permissions, it's important to have a clear understanding of who in your organization requires Docker access. Focus on gathering a comprehensive view of active users, their roles within projects, and how they interact with Docker resources. This process can be supported by tools like device management software or manual assessments. Encourage all users to update their Docker accounts to use organizational email addresses, ensuring seamless integration with your subscription.
 
-For steps on how you can do this, see [step 1 of onboarding your organization](/manuals/admin/organization/onboard.md).
+For steps on how you can do this, see [step 1 of onboarding your organization](/manuals/admin/organization/setup/onboard.md).
 
 ## Assign roles strategically
 

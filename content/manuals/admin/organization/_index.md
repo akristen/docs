@@ -8,7 +8,7 @@ grid:
   - title: Onboard your organization
     description: Learn how to onboard and secure your organization.
     icon: explore
-    link: /admin/organization/onboard
+    link: /admin/organization/setup/onboard
   - title: Manage members
     description: Explore how to manage members.
     icon: group_add
@@ -28,7 +28,7 @@ grid:
   - title: Organization settings
     description: Configure information for your organization and manage settings.
     icon: settings
-    link: /admin/organization/general-settings/
+    link: /admin/organization/setup/general-settings/
   - title: SSO and SCIM
     description:
       "Set up [Single Sign-On](/manuals/enterprise/security/single-sign-on/_index.md)
