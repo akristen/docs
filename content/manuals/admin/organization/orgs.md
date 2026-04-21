@@ -1,5 +1,6 @@
 ---
 title: Create your organization
+linkTitle: Create
 weight: 10
 description: Learn how to create an organization.
 keywords: docker organizations, organization, create organization, docker teams, docker admin console, organization management

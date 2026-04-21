@@ -1,5 +1,6 @@
 ---
 title: Onboard your organization
+linkTitle: Onboard
 weight: 20
 description: Get started onboarding your Docker Team or Business organization.
 keywords: business, team, organizations, get started, onboarding, Admin Console, organization management,

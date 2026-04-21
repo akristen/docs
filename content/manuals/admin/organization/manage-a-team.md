@@ -1,5 +1,6 @@
 ---
 title: Create and manage a team
+linkTitle: Create teams
 weight: 40
 description: Learn how to create and manage teams for your organization
 keywords: docker, registry, teams, organizations, plans, Dockerfile, Docker

@@ -1,5 +1,6 @@
 ---
 description: Convert your Docker Hub user account into an organization
+linkTitle: Convert account
 title: Convert an account into an organization
 keywords: docker hub, hub, organization, convert account, migrate account
 weight: 35

@@ -1,5 +1,6 @@
 ---
 title: Manage organization members
+linkTitle: Manage members
 weight: 30
 description: Learn how to manage organization members in Docker Hub and Docker Admin Console.
 keywords: members, teams, organizations, invite members, manage team members, export member list, edit roles, organization teams, user management
