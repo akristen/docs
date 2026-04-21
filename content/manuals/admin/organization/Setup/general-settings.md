@@ -1,6 +1,6 @@
 ---
-title: Organization information
-weight: 40
+title: Configure settings
+weight: 30
 description: Learn how to manage settings for organizations using Docker Admin Console.
 keywords: organization, settings, Admin Console, manage, Docker organization, Gravatar, SCIM, SSO setup, domain management, organization settings
 aliases:

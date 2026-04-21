@@ -12,7 +12,7 @@ grid:
   - title: Manage members
     description: Explore how to manage members.
     icon: group_add
-    link: /admin/organization/members/
+    link: /admin/organization/manage/members/
   - title: Activity logs
     description: Learn how to audit the activities of your members.
     icon: text_snippet

@@ -33,7 +33,7 @@ Teams in Docker provide a structured way to manage member access and they provid
 - Assign permissions at the team level rather than individually. For instance, a development team might have "Read & Write" access to certain repositories, while a QA team has "Read-only" access.
 - As teams grow or responsibilities shift, you can easily update permissions or add new members, maintaining consistency without reconfiguring individual settings.
 
-For more information, see [Create and manage a team](/manuals/admin/organization/manage-a-team.md).
+For more information, see [Create and manage a team](/manuals/admin/organization/manage/manage-a-team.md).
 
 ### Example scenarios
 

@@ -1,5 +1,6 @@
 ---
 title: Insights
+weight: 40
 description: Gain insights about your organization's users and their Docker usage.
 keywords: organization, insights, Docker Desktop analytics, user usage statistics, Docker Business, track Docker activity
 ---
@@ -49,12 +50,17 @@ following steps:
 
 Insights data is displayed in the following charts:
 
-- [Docker Desktop users](#docker-desktop-users)
-- [Builds](#builds)
-- [Containers](#containers)
-- [Docker Desktop usage](#docker-desktop-usage)
-- [Docker Hub images](#docker-hub-images)
-- [Extensions](#extensions)
+- [Prerequisites](#prerequisites)
+- [View Insights for organization users](#view-insights-for-organization-users)
+  - [Docker Desktop users](#docker-desktop-users)
+  - [Builds](#builds)
+  - [Containers](#containers)
+  - [Docker Desktop usage](#docker-desktop-usage)
+  - [Docker Hub images](#docker-hub-images)
+  - [Extensions](#extensions)
+- [Export Docker Desktop user data](#export-docker-desktop-user-data)
+  - [Understanding export data](#understanding-export-data)
+- [Troubleshoot Insights](#troubleshoot-insights)
 
 ### Docker Desktop users
 

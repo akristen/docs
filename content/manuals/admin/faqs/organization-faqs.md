@@ -49,7 +49,7 @@ For prerequisites and instructions, see
 Yes. A user invited to an organization will take up one of the provisioned
 seats, even if that user hasn’t accepted their invitation yet.
 
-To manage invites, see [Manage organization members](/manuals/admin/organization/members.md).
+To manage invites, see [Manage organization members](/manuals/admin/organization/manage/members.md).
 
 ### Do organization owners take a seat?
 

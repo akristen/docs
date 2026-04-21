@@ -1,7 +1,7 @@
 ---
 title: Onboard your organization
 linkTitle: Onboard
-weight: 30
+weight: 20
 description: Get started onboarding your Docker Team or Business organization.
 keywords: business, team, organizations, get started, onboarding, Admin Console, organization management,
 toc_min: 1
@@ -104,7 +104,7 @@ When you create an organization, you are the only owner. It is optional to
 add additional owners.
 
 To add an owner, invite a user and assign them the owner role. For more
-details, see [Invite members](/manuals/admin/organization/members.md) and
+details, see [Invite members](/manuals/admin/organization/manage/members.md) and
 [Roles and permissions](/manuals/enterprise/security/roles-and-permissions.md).
 
 ### Step three: Invite members
@@ -115,7 +115,7 @@ receive increased pull limits and other organization wide benefits when
 they are signed in.
 
 To add a member, invite a user and assign them the member role.
-For more details, see [Invite members](/manuals/admin/organization/members.md) and
+For more details, see [Invite members](/manuals/admin/organization/manage/members.md) and
 [Roles and permissions](/manuals/enterprise/security/roles-and-permissions.md).
 
 ### Step four: Manage user access with SSO and SCIM
@@ -170,7 +170,7 @@ security posture:
 
 ## What's next
 
-- [Manage Docker products](../manage-products.md) to configure access and view usage.
+- [Manage Docker products](../manage/manage-products.md) to configure access and view usage.
 - Configure [Hardened Docker Desktop](/manuals/enterprise/security/hardened-desktop/_index.md) to improve your organization’s security posture for containerized development.
 - [Manage your domains](/manuals/enterprise/security/domain-management.md) to ensure that all Docker users in your domain are part of your organization.
 
