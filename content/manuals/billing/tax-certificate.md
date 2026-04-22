@@ -2,14 +2,14 @@
 title: Submit a tax exemption certificate
 description: Learn how to submit a tax exemption or VAT certificate for Docker billing.
 keywords: billing, renewal, payments, tax, exemption, VAT, billing support, Docker billing
-weight: 50
+weight: 40
 ---
 
 If you're a customer in the United States and are exempt from sales tax, you
 can submit a valid tax exemption certificate to Docker Support.
 
 If you're a global customer subject to VAT, make sure to include your
-[VAT number](/manuals/billing/history.md#include-your-vat-number-on-your-invoice)
+[VAT number](cycles-info/history.md#include-your-vat-number-on-your-invoice)
 along with your country prefix when you update your billing profile.
 
 ## Prerequisites

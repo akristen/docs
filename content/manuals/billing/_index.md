@@ -14,11 +14,11 @@ grid_core:
   icon: credit_score
 - title: Update billing information
   description: Discover how to update the billing information for your personal account or organization.
-  link: /billing/details/
+  link: /billing/cycles-info/details/
   icon: contract_edit
 - title: View billing history
   description: Learn how to view billing history and download past invoices.
-  link: /billing/history/
+  link: /billing/cycles-info/history/
   icon: payments
 - title: Billing FAQs
   description: Find the answers you need and explore common questions.

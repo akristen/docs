@@ -3,7 +3,7 @@ title: Use 3D Secure authentication for Docker billing
 linkTitle: 3D Secure authentication
 description: Docker billing supports 3D Secure (3DS) for secure payment authentication. Learn how 3DS works with Docker subscriptions.
 keywords: billing, renewal, payments, subscriptions, 3DS, credit card verification, secure payments, Docker billing security
-weight: 40
+weight: 30
 ---
 
 Docker supports 3D Secure (3DS), an extra layer of authentication required
@@ -28,7 +28,7 @@ You may be asked to verify your identity when performing any of the following
 actions:
 
 - Starting a [paid subscription](../subscription/setup.md)
-- Changing your [billing cycle](/manuals/billing/cycle.md) from monthly to annual
+- Changing your [billing cycle](cycles-info/cycle.md) from monthly to annual
 - [Upgrading your subscription](../subscription/change.md)
 - [Adding seats](../subscription/manage-seats.md) to an existing subscription
 

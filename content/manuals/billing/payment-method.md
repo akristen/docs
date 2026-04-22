@@ -1,10 +1,12 @@
 ---
-title: Add or update a payment method
-weight: 20
+title: Add or update payment method
+linkTitle: Payment methods
+weight: 10
 description: Learn how to add or update a payment method in Docker Hub
 keywords: payments, billing, subscription, supported payment methods, failed payments, add credit card, bank transfer, Stripe Link, payment failure
 aliases:
   - /billing/core-billing/payment-method/
+  - /billing/method-cycles/payment-method/
 ---
 
 Docker supports different payment methods for your paid personal
@@ -25,8 +27,8 @@ at any time. All charges are in United States dollars (USD). The following payme
 
 Certain payment methods require additional steps before selecting them as a payment method:
 
-- You must [verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account) before choosing a bank account.
-- You must have a Docker Business or Docker Team plan to [pay by invoice](/manuals/billing/payment-method.md#enable-and-disable-pay-by-invoice).
+- You must [verify a bank account](#verify-a-bank-account) before choosing a bank account.
+- You must have a Docker Business or Docker Team plan to [pay by invoice](#enable-and-disable-pay-by-invoice).
 - You must be an existing Stripe Link customer, or fill out the card information form to use Link payments.
 
 ## Manage payment method

@@ -1,8 +1,12 @@
 ---
-title: Manage your billing information
+title: Manage billing details
+linkTitle: Billing details
 weight: 30
 description: Learn how to update your billing information in Docker Hub
 keywords: payments, billing, subscription, invoices, update billing email, change billing address, VAT ID, Docker billing account
+aliases:
+  - /billing/details/
+  - /billing/method-cycles/details/
 ---
 
 You can update the billing information for your personal account or for an

@@ -4,7 +4,7 @@ linkTitle: FAQs
 description: Frequently asked questions related to billing
 keywords: billing, renewal, payments, faq
 tags: [FAQ]
-weight: 60
+weight: 50
 ---
 
 ### What happens if my subscription payment fails?
@@ -31,7 +31,7 @@ No. Docker retries failed payments on a [retry schedule](/manuals/billing/faqs.m
 
 To ensure a retired payment is successful, verify your default payment is
 updated. If you need to update your default payment method, see
-[Manage payment method](/manuals/billing/payment-method.md#manage-payment-method).
+[Manage payment method](payment-method.md#manage-payment-method).
 
 ### Does Docker collect sales tax and/or VAT?
 
@@ -43,7 +43,7 @@ Docker collects sales tax and/or VAT from the following:
 
 To ensure that tax assessments are correct, make sure that your billing
 information and VAT/Tax ID, if applicable, are updated. See
-[Update the billing information](/manuals/billing/details.md).
+[Update the billing information](cycles-info/details.md).
 
 If you're exempt from sales tax, see
 [Register a tax certificate](/manuals/billing/tax-certificate.md).
@@ -60,4 +60,4 @@ purchasing upgrades or additional seats. You must use card payment or US bank
 accounts for these changes.
 
 For a list of supported payment methods, see
-[Add or update a payment method](/manuals/billing/payment-method.md).
+[Add or update a payment method](payment-method.md).
