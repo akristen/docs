@@ -98,7 +98,7 @@ known issues for each Docker Hub release.
 
 ### Bug fixes and enhancements
 
-- You can now [export a CSV file of members](../admin/organization/manage/members.md#export-members) from organizations that you own.
+- You can now [export a CSV file of members](../admin/organization/manage/members.md#export-members-csv-file) from organizations that you own.
 
 ## 2022-07-22
 

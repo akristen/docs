@@ -40,7 +40,7 @@ Docker activity logs are available for 90 days. You're responsible for exporting
 
 ## Can I export a list of users with their roles and privileges?
 
-Yes, use the [Export Members](../../admin/organization/manage/members.md#export-members) feature to export a CSV file containing your organization's users with role and team information.
+Yes, use the [Export Members](../../admin/organization/manage/members.md#export-members-csv-file) feature to export a CSV file containing your organization's users with role and team information.
 
 ## How does Docker Desktop handle authentication information?
 
