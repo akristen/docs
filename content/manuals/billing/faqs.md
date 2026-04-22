@@ -43,7 +43,7 @@ Docker collects sales tax and/or VAT from the following:
 
 To ensure that tax assessments are correct, make sure that your billing
 information and VAT/Tax ID, if applicable, are updated. See
-[Update the billing information](/manuals/billing/details.md).
+[Update the billing information](/manuals/billing/manage-billing.md#manage-billing-details).
 
 If you're exempt from sales tax, see
 [Register a tax certificate](/manuals/billing/tax-certificate.md).

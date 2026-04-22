@@ -1,5 +1,6 @@
 ---
 title: Add or update a payment method
+linkTitle: Add payment method
 weight: 20
 description: Learn how to add or update a payment method in Docker Hub
 keywords: payments, billing, subscription, supported payment methods, failed payments, add credit card, bank transfer, Stripe Link, payment failure
@@ -26,7 +27,7 @@ at any time. All charges are in United States dollars (USD). The following payme
 Certain payment methods require additional steps before selecting them as a payment method:
 
 - You must [verify a bank account](/manuals/billing/payment-method.md#verify-a-bank-account) before choosing a bank account.
-- You must have a Docker Business or Docker Team plan to [pay by invoice](/manuals/billing/payment-method.md#enable-and-disable-pay-by-invoice).
+- You must have a Docker Business or Docker Team plan to [pay by invoice](/manuals/billing/pay-invoice.md#enable-or-disable-pay-by-invoice).
 - You must be an existing Stripe Link customer, or fill out the card information form to use Link payments.
 
 ## Manage payment method
@@ -67,26 +68,6 @@ To remove a single payment method:
 1. Select the three dots, then choose **Remove**.
 
 To remove your default payment method, first set a different payment method as default, or [downgrade to a free subscription](/manuals/subscription/change.md).
-
-## Enable and disable pay by invoice
-
-> [!TIP]
-> Do you need to pay by invoice? [Upgrade to a Docker Business or Docker Team plan](https://www.docker.com/pricing?ref=Docs&refAction=DocsBillingPaymentMethod) and choose the annual subscription.
-
-Pay by invoice requires you to pay upfront for your first subscription period using a payment card or ACH bank transfer. At renewal time, instead of automatic payment, you'll receive an invoice via
-email that you must pay manually.
-
-Follow these steps to enable or disable pay by invoice:
-
-1. Sign in to [Docker Home](https://app.docker.com/) and select your
-   organization.
-2. Select **Billing**, then **Payment methods**.
-3. Select **Pay by invoice**, then select the pay by invoice toggle to enable or disable.
-4. Confirm your billing contact details. If you need to change them, select
-   **Change** and enter your new details.
-
-Pay by invoice is not available for
-subscription upgrades or changes.
 
 ## Verify a bank account
 
