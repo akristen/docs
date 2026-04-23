@@ -1,7 +1,7 @@
 ---
 title: Organization overview
 linkTitle: Organization
-weight: 10
+weight: 20
 description: Learn how to manage your Docker organization, including teams, members, permissions, and settings.
 keywords: organizations, admin, overview, manage teams, roles
 grid:

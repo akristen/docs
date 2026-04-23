@@ -1,5 +1,6 @@
 ---
-title: Administration
+title: Admin Console overview
+linkTitle: Admin Console
 description: Overview of administration features and roles in the Docker Admin Console
 keywords: admin, administration, company, organization, Admin Console, user accounts, account management
 weight: 10
