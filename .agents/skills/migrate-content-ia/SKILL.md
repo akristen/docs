@@ -7,7 +7,9 @@ description: >
   PR-scoped mapping plus whole-content sweeps for inbound links to that mapping,
   or a full-site follow-up. Triggers on: "IA migration", "redirects for moved
   pages", "fix links after content move", "PR-scoped link/anchor pass",
-  "aliases for old URLs".
+  "aliases for old URLs". After branch work, chain the review-changes skill
+  (main...HEAD) before a PR. Agents must run the in-file required procedure
+  and definition of done, not the phases alone in isolation.
 ---
 
 # Migrate content IA (redirects + links + anchors)
@@ -24,6 +26,86 @@ links, special cases) and **hugo.yaml** (`permalinks`, `refLinksErrorLevel`,
 **Related skills:** **research** helps map moves and find inbound links; **write**
 commits minimal edits. Run this skill’s phases after the move is identified (or
 in parallel with research for large IA work).
+
+## Agent: required procedure (do not skip)
+
+**Common mistake (wrong):** use **`git diff main...HEAD` (or the PR’s file
+list) as the full set of places to fix links** for a migration. That set shows
+**what *moved***; it is **not** the list of every page that **points *to*** a
+moved page. Inbound stragglers are often in files the PR **never** touched. You
+must still **sweep the repo** for every string in the **old path and published-URL set**
+for this run, not only for “files in the diff.”
+
+**Definition of done (when the migration is *finished*):** **Both** of the
+following (unless the user or **AGENTS.md** **explicitly defers** a **List 2**
+item in **Phase 3**; document the deferral):
+
+1. **`docker buildx bake validate`** passes for the branch, with no new
+   build/link errors from this work.
+2. A **sweep of the old path and published-URL set for this run** (see
+   [Sweep commands](#sweep-commands) below) finds **no** remaining
+   migration-relevant **inbound** reference—**including**:
+   - links to an old **source** path (plain `.md` and equivalent `ref` forms),
+   - links that use the old path **and** a `#fragment`,
+   - and, where your mapping includes them, old **published-style** `link:` /
+   `url:` / full-site URL strings,  
+   **except** intentional entries to keep: for example `aliases` on the **new**
+   canonical page, or **redirects.yml** *sources* you must not edit per policy.
+   (A hit on a **source** that is only an `alias` line on the new page is
+   **expected**—do not “fix” that away; distinguish alias rows from straggler
+   links in body or nav config.)
+
+**Chaining (policy):** when this branch’s content work is ready for handoff,
+**run the [review-changes](../review-changes/SKILL.md) skill** on
+**`main...HEAD`** (or **`merge-base`…`HEAD`** for a different target branch) so
+the **whole branch** is re-read for cross-page issues before opening a PR. Do
+not treat phases 0–3 alone as the final check.
+
+**Run in order (mandatory for agents):**
+
+1. **Scope the moves (mapping input):** set the Git range like **review-changes**
+   (for a PR to `main`: `git diff --name-only main...HEAD`; for another target:
+   `BASE=$(git merge-base <target-branch> HEAD)` then
+   `git diff --name-only $BASE...HEAD`, as in **Phase 0.5**). Include
+   renames; build the **old → new** table (source and published) per **Phase
+   0**.
+2. **Sweep and list:** for every **old** path/URL in that table, run
+   [Sweep commands](#sweep-commands) on the **allowed** trees. Record
+   every hit as **List 1** (no `#`) or **List 2** (old path with `#...`) per
+   **Phase 0.5**.
+3. **Phased edits:** **Phase 1** (`aliases`), then **Phase 2** (List 1), then
+   **Phase 3** (List 2) with **no guessing**—as in the sections below.
+4. **Re-sweep** the same old-path set, then run **`docker buildx bake
+   validate`**. The **Definition of done** above is met or you have **explicit
+   defers** for the remainder.
+5. **review-changes:** run **[review-changes](../review-changes/SKILL.md)**
+   on the branch vs **`main`…`HEAD`** (or the correct base) before a PR.
+
+### Sweep commands
+
+Use a **repository** search (e.g. `rg` / your IDE) so **nothing** in the
+allowed scope is only eyeballed.
+
+**Trees to include** (at minimum): all of `content/`, plus **`data/`** and
+**`layouts/`** when a migration can appear in config, `link:`-like fields,
+shortcodes, or hardcoded path strings. Follow **Vendored / generated** rules in
+**AGENTS.md**; do not edit disallowed files.
+
+**What to search for (repeat per row in the old side of the mapping):**
+
+- **Hugo / source form:** path segments that identify the *old* file, e.g.
+  `manuals/.../old-segment/...` or `../old-segment/.../page.md` as your tree
+  uses; include variants that still appear in the repo.
+- **Published / site form:** e.g. `/admin/.../old-slug/` in front matter, nav
+  `url:`, or `https://docs.docker.com/...` in allowed files—**match the
+  file’s** established pattern, per **Conventions** below.
+- **Anchors:** search for the **old path string**; matches that also include
+  `#...` belong on **List 2** for **Phase 3** unless the whole link is
+  a pure path-only case.
+
+[scripts/scope-pr-files.sh](scripts/scope-pr-files.sh) (if present) prints
+**`PR_SCOPE_FILES` only**—it does **not** replace this sweep. Use it to build
+the **old → new** table, **not** to list where inbound links were fixed.
 
 ## Progressive disclosure (optional)
 
@@ -294,7 +376,9 @@ paths in PR scope for a given target branch (default `main`).
 docker buildx bake validate
 ```
 
-Phase 2 may leave **List 2** (old `path#...`) in place by design; **validate**
-output can reflect that until Phase 3 completes. Failing checks tied only to
-**unresolved** List 2 or **deferred** per **Modes** are **expected** until the
-user supplies targets and the agent re-runs the build.
+Use the **Definition of done** in **Agent: required procedure (do not skip)**
+as the final bar: **validate** must pass, and the **sweep** must be clean for
+**plain** and **`#fragment`** old-path references, **or** the remainder must be
+**explicitly deferred** in **Phase 3** per **AGENTS.md** / the user. Mid-run,
+**Phase 2** may still leave **List 2** links unchanged **until** Phase 3; that
+intermediate state is **not** the finished migration.
