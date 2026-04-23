@@ -101,7 +101,7 @@ mapping only when needed.
   `content/manuals/...` often use the full **`/manuals/...`** path; published
   URLs omit the `manuals` segment—do not confuse the two when fixing links.
 - **Link text (STYLE.md):** descriptive, ~**5 words**; no “click here” or
-  **“learn more”**; **no** end punctuation **inside** the link text; **no** bold/italic
+  “learn more”; **no** end punctuation **inside** the link text; **no** bold/italic
   on link text unless normal in the sentence.
 - **Headings (STYLE):** **sentence case**; do not rename headings in passing
   unless the migration requires it (heading changes break fragments).
