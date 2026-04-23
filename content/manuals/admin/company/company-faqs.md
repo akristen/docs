@@ -8,6 +8,7 @@ tags: [FAQ]
 aliases:
   - /docker-hub/company-faqs/
   - /faq/admin/company-faqs/
+  - /admin/faqs/company-faqs/
 ---
 
 ### Some of my organizations don’t have a Docker Business subscription. Can I still use a parent company?

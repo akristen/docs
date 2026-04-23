@@ -8,6 +8,7 @@ tags: [FAQ]
 aliases:
   - /docker-hub/organization-faqs/
   - /faq/admin/organization-faqs/
+  - /admin/faqs/organization-faqs/
 ---
 
 ### How can I see how many active users are in my organization?
