@@ -4,6 +4,7 @@ linkTitle: Owners
 description: Learn how to add and remove company owners.
 keywords: company, owners, add company owner, remove company owner, company manageemnt, company owner permissions
 aliases:
+  - /admin/company/owners/
   - /docker-hub/company-owner/
 ---
 
