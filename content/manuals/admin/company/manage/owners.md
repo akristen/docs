@@ -1,6 +1,6 @@
 ---
 title: Manage company owners
-linkTitle: Manage owners
+linkTitle: Owners
 description: Learn how to add and remove company owners.
 keywords: company, owners, add company owner, remove company owner, company manageemnt, company owner permissions
 aliases:

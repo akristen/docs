@@ -1,5 +1,5 @@
 ---
-title: Create a company
+title: Create new company
 linkTitle: Create
 description: Learn how to create a company to centrally manage multiple organizations.
 keywords: company, hub, organization, company owner, Admin Console, company management, Docker Business, create company, Docker Admin Console
