@@ -6,11 +6,11 @@
 #   ./scope-pr-files.sh [target-branch]
 # Default target-branch: main
 #
-# Example (PowerShell, from repo root):
+# Example (Bash / Git Bash, from repo root):
 #   bash .agents/skills/migrate-content-ia/scripts/scope-pr-files.sh
 # Example (other base):
 #   bash .../scope-pr-files.sh upstream/main
-set -uo pipefail
+set -euo pipefail
 
 target="${1:-main}"
 
