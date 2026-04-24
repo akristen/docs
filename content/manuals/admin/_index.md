@@ -8,6 +8,10 @@ params:
   sidebar:
     group: Enterprise
 grid:
+  - title: Organizations and companies
+    description: Understand the company and organization hierarchy.
+    icon: account_tree
+    link: /admin/organizations-companies/
   - title: Company administration
     description: Explore how to manage a company.
     icon: apartment
@@ -35,6 +39,11 @@ grid:
 aliases:
   - /docker-hub/admin-overview
 ---
+
+## Teams and members
+
+For how companies, organizations, teams, and members fit together in the
+hierarchy, see [Organizations and companies](/admin/organizations-companies/).
 
 ### Team
 
