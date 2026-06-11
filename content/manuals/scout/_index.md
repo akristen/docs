@@ -2,8 +2,7 @@
 title: Docker Scout
 weight: 40
 keywords: scout, supply chain, vulnerabilities, packages, cves, scan, analysis, analyze
-description:
-  Get an overview on Docker Scout to proactively enhance your software supply chain security
+description: Get an overview on Docker Scout to proactively enhance your software supply chain security
 aliases:
   - /engine/scan/
 params:
@@ -38,7 +37,7 @@ grid:
       Ensure that your artifacts align with supply chain best practices.
     icon: shield-check
   - title: Upgrade
-    link: /subscription/change/
+    link: /subscription/core/
     description: |
       A Personal subscription includes up to 1 repository. Upgrade for more.
     icon: arrow-up-circle

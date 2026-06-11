@@ -3,7 +3,7 @@ title: Security for developers
 linkTitle: Security
 description: Learn about developer-level security features like 2FA and access tokens
 keywords: docker, docker hub, docker desktop, security, developer security, 2FA, access tokens
-weight: 40
+weight: 50
 params:
   sidebar:
     group: Platform
