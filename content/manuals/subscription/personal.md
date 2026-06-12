@@ -1,6 +1,6 @@
 ---
-title: Docker Individual subscription
-linkTitle: Docker Individual
+title: Docker Personal subscription
+linkTitle: Docker Personal
 description:
   Manage Docker Personal and Pro subscriptions for individual developer
   accounts, including upgrades and cancellation
@@ -8,6 +8,8 @@ keywords:
   docker individual, docker personal, docker pro, personal subscription, pro
   subscription, individual developer, docker pricing
 weight: 20
+aliases:
+  - /subscription/individual/
 ---
 
 Docker Individual subscriptions cover personal Docker accounts. Docker Personal
