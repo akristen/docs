@@ -55,7 +55,7 @@ usage.
 
 ## Purchasing Docker products
 
-You can purchase some Docker products through the product catalog:
+You can purchase Docker products through the product catalog:
 
 1. Sign in to [Docker Home](https://app.docker.com/), then choose your personal account or your organization account.
 1. Go to **Billing**.
@@ -69,13 +69,14 @@ You can purchase some Docker products through the product catalog:
 
 ## Purchasing sales-led products
 
-Some products may specify that they're sales-led, meaning you must [contact sales](https://www.docker.com/pricing/contact-sales/) to opt in.
+Some products specify that they're sales-led. You must [contact sales](https://www.docker.com/pricing/contact-sales/) to opt in to these products.
 
 ## Docker plans and add-ons
 
 Docker subscriptions can be categorized into plans and add-ons.
 
-Plans come with built-in quotas with set usage limits. Add-ons extend those limits when you purchase seats, licenses, repositories, or minutes.
+- Plans come with built-in quotas with set usage limits.
+- Add-ons extend those limits when you purchase seats, licenses, repositories, or minutes.
 
 For product-specific details on quotas and available add-ons, see the relevant product page.
 

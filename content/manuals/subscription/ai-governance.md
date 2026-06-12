@@ -19,8 +19,6 @@ To purchase licenses, [contact Docker sales](https://www.docker.com/pricing/cont
 
 ## Usage
 
-### AI Governance
-
 AI Governance licenses apply to Docker Sandbox usage:
 
 - Admins can create and enforce organization-wide AI Governance policies for
@@ -34,15 +32,6 @@ When a license-holding member uses Docker Sandbox, the organization policy
 overrides their local policy rules. Members without an AI Governance license
 can still use Docker Sandbox, but organization policies do not govern their
 usage.
-
-### Docker Offload
-
-Docker Offload licenses let developers offload container builds and runs to
-the cloud:
-
-- You must have a Docker Team or Docker Business subscription.
-- You can only assign Docker Offload licenses to members with a Docker Team or
-  Docker Business seat.
 
 ## Upgrade licenses
 
