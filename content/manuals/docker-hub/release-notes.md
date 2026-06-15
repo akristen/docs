@@ -162,7 +162,7 @@ known issues for each Docker Hub release.
 
 ### New
 
-- You can now purchase or upgrade to a Docker Business subscription using a credit card. To learn more, see [Upgrade your subscription](../subscription/core.md).
+- You can now purchase or upgrade to a Docker Business subscription using a credit card. To learn more, see [Upgrade your subscription](../subscription/products/core.md).
 
 ## 2021-08-31
 

@@ -71,5 +71,5 @@ subscription at the end of the current billing cycle.
 ## What's next
 
 - [Gordon usage limits and tiers](/manuals/ai/gordon/usage-limits.md)
-- [Docker Personal subscription](./personal.md)
+- [Docker Personal subscription](./core.md#docker-personal-subscription)
 - [Gordon overview](/manuals/ai/gordon/_index.md)

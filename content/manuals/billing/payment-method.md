@@ -66,7 +66,7 @@ To remove a single payment method:
 1. Find the payment method you want to remove from the **Payment method** table.
 1. Select the three dots, then choose **Remove**.
 
-To remove your default payment method, first set a different payment method as default, or [downgrade to a free subscription](/manuals/subscription/core.md).
+To remove your default payment method, first set a different payment method as default, or [downgrade to a free subscription](/manuals/subscription/products/core.md).
 
 ## Enable and disable pay by invoice
 

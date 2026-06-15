@@ -56,7 +56,7 @@ features in your new tier.
 > [!TIP]
 > If you're upgrading from a Personal subscription to a Team subscription and
 > want to keep your username,
-> [convert your user account into an organization](../admin/organization/setup/convert-account.md).
+> [convert your user account into an organization](../../admin/organization/setup/convert-account.md).
 
 To upgrade your subscription:
 

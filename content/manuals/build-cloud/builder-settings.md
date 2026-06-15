@@ -47,7 +47,7 @@ two builders:
 
 ### Get more build cache space
 
-To get more Build cache space, [upgrade your subscription](/manuals/subscription/build-cloud.md).
+To get more Build cache space, [upgrade your subscription](/manuals/subscription/products/build-cloud.md).
 
 > [!TIP]
 >
