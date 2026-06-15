@@ -7,6 +7,8 @@ description:
 keywords: docker build cloud, build minutes, cloud builds, subscription minutes,
   build cloud subscription, remote builds
 weight: 50
+aliases:
+  - /subscription/build-cloud/
 ---
 
 Docker Build Cloud subscriptions provide additional build minutes for remote

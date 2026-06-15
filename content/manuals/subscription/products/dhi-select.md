@@ -7,6 +7,8 @@ description:
 keywords: dhi select, docker hardened images, hardened images, repositories,
   organization subscription, secure images, dhi enterprise
 weight: 40
+aliases:
+  - /subscription/dhi-select/
 ---
 
 DHI Select lets organization admins assign Docker Hardened Image repositories

@@ -8,6 +8,8 @@ keywords:
   gordon, gordon plus, gordon max, gordon ultra, gordon usage, gordon plan,
   personal subscription, ai assistant, usage allowance
 weight: 60
+aliases:
+  - /subscription/gordon/
 ---
 
 Gordon plans increase your maximum Gordon usage allowance on a personal Docker

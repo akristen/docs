@@ -8,6 +8,8 @@ keywords:
   ai governance, docker offload, licenses, organization licenses, ai policy,
   docker sandbox, subscription management
 weight: 30
+aliases:
+  - /subscription/ai-governance/
 ---
 
 AI Governance licenses let organizations enforce AI usage policies for members
