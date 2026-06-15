@@ -7,7 +7,7 @@ description:
 keywords:
   ai governance, docker offload, licenses, organization licenses, ai policy,
   docker sandbox, subscription management
-weight: 30
+weight: 40
 aliases:
   - /subscription/ai-governance/
 ---

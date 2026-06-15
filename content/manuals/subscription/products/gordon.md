@@ -7,7 +7,7 @@ description:
 keywords:
   gordon, gordon plus, gordon max, gordon ultra, gordon usage, gordon plan,
   personal subscription, ai assistant, usage allowance
-weight: 60
+weight: 20
 aliases:
   - /subscription/gordon/
 ---

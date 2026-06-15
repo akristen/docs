@@ -6,7 +6,7 @@ description:
   including purchasing, adding repositories, and deactivating
 keywords: dhi select, docker hardened images, hardened images, repositories,
   organization subscription, secure images, dhi enterprise
-weight: 40
+weight: 30
 aliases:
   - /subscription/dhi-select/
 ---
