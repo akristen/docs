@@ -1,6 +1,6 @@
 ---
-title: Purchase new subscription
-linkTitle: Purchase
+title: Set up a new subscription
+linkTitle: Setup
 description:
   Learn how to purchase a new Docker subscription from the product catalog and
   how to upgrade or downgrade an existing subscription.
