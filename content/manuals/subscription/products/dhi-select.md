@@ -17,9 +17,6 @@ after initial setup, can access those repositories. DHI Select is scoped by
 repository count — you choose how many hardened repositories your organization
 needs.
 
-To purchase, sign in to [Docker Home](https://app.docker.com/), go to
-**Billing**, select **Browse products**, then select **Hardened Images**.
-
 ## Usage
 
 After purchasing DHI Select, organization members can pull hardened images from
@@ -34,44 +31,24 @@ For full details on using DHI Select repositories, see
 > [Contact Docker sales](https://www.docker.com/pricing/contact-sales/) to
 > discuss an Enterprise plan.
 
-## Upgrade repositories
+## Billing behaviors
 
-To purchase DHI Select:
+DHI Select is an annual subscription billed from the date your subscription
+starts. There is no month-to-month billing option.
 
-1. Sign in to [Docker Home](https://app.docker.com/) and select your
-   organization.
-1. Select **Billing**, then **Browse products**.
-1. Select **Hardened Images** from the products page.
-1. Choose the organization account that should receive the DHI repositories,
-   then select **Continue**. You can add repositories for one account at a
-   time.
-1. Select **Add repositories**, then enter the number of new repositories you
-   want.
-1. Verify your billing details, continue to payment, and complete checkout.
+Repositories are billed per repository per year. When you add repositories
+mid-cycle, the charge is prorated — you pay only for the remaining portion of
+the annual billing period.
 
-To add repositories to an active DHI Select plan:
+Cancellations and repository removals are deferred to the end of the current
+billing cycle. You can cancel renewal or remove repositories at any time, but
+access remains active until the cycle ends and no partial refunds are issued.
 
-1. From the Billing overview page, select **Manage** next to
-   **Hardened Images**.
-1. Select **Add repositories**.
-1. Verify your billing details, continue to payment, and complete checkout.
+## Downgrade considerations
 
-To remove repositories from an active plan:
-
-1. From the Billing overview page, select **Manage** next to
-   **Hardened Images**.
-1. Select **Remove repositories**.
-
-## Deactivate
-
-To cancel your DHI Select plan at the end of the current billing cycle:
-
-1. From the Billing overview page, select **Manage** next to
-   **Hardened Images**.
-1. Select **Disable auto-renewal**.
-
-Your DHI Select plan remains active until the end of the billing cycle, then
-cancels automatically.
+Cancellations and repository removals take effect at the end of the current
+annual billing cycle — you cannot stop a subscription mid-cycle or receive a
+partial refund. Repository access remains active until the cycle ends.
 
 ## What's next
 

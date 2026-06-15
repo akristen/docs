@@ -25,8 +25,6 @@ AI Governance licenses apply to Docker Sandbox usage:
 
 - Admins can create and enforce organization-wide AI Governance policies for
   members who hold a license.
-- AI Governance licenses are independent of Docker Team or Business — you can
-  purchase them without an existing Docker Core subscription.
 - You can assign AI Governance licenses to organization members who do not hold
   a Docker Core seat.
 
@@ -35,25 +33,14 @@ overrides their local policy rules. Members without an AI Governance license
 can still use Docker Sandbox, but organization policies do not govern their
 usage.
 
-## Upgrade licenses
+## Billing behaviors
 
-Once you've purchased licenses for your organization, you can assign them to
-members from the **Members** page in Docker Home.
-
-For instructions, see
-[Manage license assignment](/manuals/admin/organization/manage/manage-licenses.md).
-
-To purchase additional licenses,
+AI Governance licenses are independent of Docker Team or Business — you can
+purchase them without an existing Docker Core subscription. To purchase
+additional licenses,
 [contact Docker sales](https://www.docker.com/pricing/contact-sales/).
 
-## Deactivate
-
-To remove a license from a member, see
-[Manage license assignment](/manuals/admin/organization/manage/manage-licenses.md).
-
-To cancel your AI Governance or Docker Offload subscription entirely, contact
-your Docker account manager or
-[Docker sales](https://www.docker.com/pricing/contact-sales/).
+## Downgrade considerations
 
 ## What's next
 
