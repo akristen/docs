@@ -10,7 +10,7 @@ keywords:
 weight: 10
 ---
 
-In Billing, you can purchase new subscriptions from the product catalog and
+You can add and manage your subscriptions from **Docker Home > Billing**. When adding or managing new plans manage active from the product catalog and
 manage existing ones from the **Plans** page. The product catalog lists all
 self-serve Docker products, while **Plans** shows your active subscriptions and
 lets you adjust or cancel them.

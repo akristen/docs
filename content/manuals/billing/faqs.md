@@ -5,6 +5,9 @@ description: Frequently asked questions related to billing
 keywords: billing, renewal, payments, faq
 tags: [FAQ]
 weight: 60
+aliases:
+  - /docker-hub/billing/
+  - /docker-hub/billing/faq/
 ---
 
 ### What happens if my subscription payment fails?

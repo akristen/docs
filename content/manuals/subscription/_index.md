@@ -11,14 +11,14 @@ params:
   sidebar:
     group: Platform
 grid_overview:
-  - title: Explore products
-    description: Browse the Docker product catalog to see available subscriptions and add-ons.
-    link: /subscription/products/
-    icon: magnifying-glass-plus
   - title: Set up or add a subscription
     description: Purchase a new subscription from the Docker product catalog.
     link: /subscription/setup/
     icon: credit-card
+  - title: Explore products
+    description: Browse the Docker product catalog to see available subscriptions and add-ons.
+    link: /subscription/products/
+    icon: magnifying-glass-plus
   - title: Add billing details
     description: Update your billing information for your personal account or organization.
     link: /billing/details/
@@ -27,34 +27,31 @@ grid_overview:
     description: View your billing history and download past invoices.
     link: /billing/history/
     icon: document-text
-  - title: Get support
+  - title: Learn about support
     description: Find support options for Docker products, including paid subscriptions and community resources.
     link: /support/
     icon: question-mark-circle
 aliases:
-  - /docker-hub/billing/
-  - /docker-hub/billing/faq/
   - /subscription/scale/
   - /subscription/change/
   - /subscription/details/
 ---
 
-Docker subscriptions provide licensing and usage entitlements for Docker
-products. A plan defines which features you can access and how much usage is
-included.
+After creating a Docker account, you can subscribe to a number of Docker plans. Docker plans may include different tier levels, ranging from basic tiers to a selection of paid tiers. Each tier within a plan upgrades your usage entitlements and feature sets. 
 
-## Docker subscription types
+This page breaks down the kinds of Docker plans you can subscribe to, with explanations about usage within each tier. 
 
-Docker subscriptions are organized into several types, each with a different
-billing and usage model:
+## Docker plan types
+
+There are two types of Docker plans. Docker Core upgrades your basic personal or organization accounts to higher tiers with additional feature sets. Product-based plans are subscription types tied to discrete products in Docker's product catalog. 
 
 | Subscription type | Billing model | Examples |
 | ----------------- | ------------- | -------- |
 | Docker Core | Flat-rate tiers tied to account type | Docker Pro (Personal)<br>Docker Team and Docker Business (Organization)  |
 | Product-based | Prepaid entitlements added on top of a base plan | Gordon (Extends monthly usage limits)<br>DHI (Security and compliance features) |
 
-Subscription types can be combined. A tiered plan provides the foundation for
-most accounts, with prepaid or per-unit subscriptions added on top as needed.  
+Subscription types can be combined. A Docker Core plan provides the foundation for
+most accounts, with prepaid or per-unit subscriptions added on top as needed. Depending on the product, you may not need a Docker Core plan at all. 
 
 ## Scale a subscription
 
@@ -63,7 +60,7 @@ units to extend usage without changing your plan tier.
 
 | Unit             | Description                                                                                                                                                                         | Examples |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| Seats            | Each seat extends the subscription entitlements to one more member.                                                                    | Docker Pro, Docker Core |
+| Seats            | Each seat extends the subscription entitlements to one more member.                                                                    | Docker Core |
 | Licenses | Access to specific products or product tiers, purchased separately from your core plan. | AI Governance |
 | Minutes          | Cloud build capacity, sold in blocks and consumed within the billing period.           | Docker Build Cloud |
 | Repositories     | Additional container repositories covered by security scanning and analysis features.                                                                                               | DHI |
@@ -73,8 +70,7 @@ units to extend usage without changing your plan tier.
 Standard support is included with paid plans and scales with plan tier. 
 
 - Docker
-also offers premium support as an optional add-on for Docker Business and Docker
-Hardened Images customers. 
+also offers premium support as an optional add-on for Docker Business and DHI customers. 
 - Premium support provides 24/7 response, priority
 SLAs, and a dedicated technical advisory manager.
 
