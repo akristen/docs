@@ -37,13 +37,6 @@ and provides a single point of visibility across those organizations.
 Organization owners with a Docker Business subscription can create a company
 and manage it through Docker Home.
 
-## Company structure
-
-The following diagram shows how a company relates to its associated
-organizations.
-
-![Diagram showing how companies relate to Docker organizations](/accounts/organization/images/docker-admin-structure.webp)
-
 For the full administration hierarchy, see
 [Company and organization hierarchy](/manuals/accounts/organization/_index.md#company-and-organization-hierarchy).
 
