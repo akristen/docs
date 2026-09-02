@@ -30,7 +30,17 @@ grid:
 ---
 
 Answers to common questions about Docker accounts, organizations, companies,
-subscriptions, billing, security, authentication, and related topics.
+subscriptions, billing, security, and authentication.
+
+Account FAQs cover Docker IDs, creating an account, organizations, and
+companies. Security FAQs cover single sign-on, identity providers,
+enforcement, and domains. Subscription and billing FAQs cover Docker plans,
+payments, taxes, and invoices. Platform FAQs cover Docker Desktop
+containers, networking, VMs, and general platform security.
+
+Product-specific FAQs also appear under
+[Docker Desktop](/manuals/desktop/troubleshoot-and-support/faqs/general.md)
+and throughout Docker Hub documentation.
 
 ## Next steps
 
