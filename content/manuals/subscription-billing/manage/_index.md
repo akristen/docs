@@ -32,36 +32,48 @@ grid:
 ---
 
 You manage Docker plans, payment methods, invoices, credits, and taxes from
-the billing portal in Docker Home. The portal shows active plans, usage,
-costs, and credits for the account you select.
-
-## Billing portal
+Docker Home. Billing is scoped to the account you
+select. To manage billing:
 
 1. Sign in to [Docker Home](https://app.docker.com/), then choose your
-   account.
-1. Go to **Billing** to view the **Overview** page.
-1. Select the page you want to explore.
+   personal account or organization.
+1. Select **Billing**.
+1. Select the page you want in the sidebar, or stay on **Overview**.
 
-### Usage
+To add or upgrade a plan, see
+[Manage plans](/manuals/subscription-billing/manage/plans.md). To compare
+plan types, see [Plans](/manuals/subscription-billing/plans/_index.md).
+
+## Overview
+
+When you select **Billing**, you are taken to the **Overview** page, where you review active plans, payment
+method, and subscription totals for that account. From there you add
+self-serve products, manage a plan you already have, or open another
+billing page in the sidebar.
+
+## Invoices
+
+The billing **Invoices** page lists invoices issued when a plan renews or
+changes. You can open an invoice, check payment status, and download a
+copy. 
+
+## Usage
 
 The billing **Usage** page helps you compare usage-based charges across
 billing periods. You can track usage by changing the period, product,
 and how the product is metered.
 
-### Costs
+## Costs
 
 The billing **Costs** page aggregates all costs by billing period. It
 breaks down charges by resource (the product accruing a charge), the
 status of your billing period, and costs to date.
 
-### Credits
+## Credits
 
 The billing **Credits** page shows credits applied to your costs. If you
 received a promotional credit, you can see how it applies to your bill
 from this page.
-
-For information about your billing cycle and renewal dates, see
-[Billing cycle](/manuals/subscription-billing/manage/details.md#billing-cycle).
 
 ## Next steps
 

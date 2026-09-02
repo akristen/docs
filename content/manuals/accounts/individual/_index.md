@@ -9,7 +9,7 @@ keywords: accounts, docker ID, username, email, Google, GitHub, sign-in,
   organization account, account types, Docker Hub, SSO, deactivate account
 weight: 10
 grid:
-  - title: Create an account
+  - title: Set up your account
     description: Get started with Docker and create an account.
     icon: finger-print
     link: /accounts/individual/create-account/

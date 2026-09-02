@@ -15,15 +15,31 @@ grid:
     icon: user-circle
     link: /accounts/individual/
   - title: Organization accounts
-    description: Manage organizations, companies, members, and teams.
+    description: Manage members, teams, and organization settings.
     icon: building-storefront
     link: /accounts/organization/
+  - title: Company accounts
+    description: Group multiple organizations for centralized administration.
+    icon: building-office-2
+    link: /accounts/company/
+  - title: Security
+    description: Authentication, tokens, and roles for accounts and organizations.
+    icon: lock-closed
+    link: /security/
+  - title: Subscription and billing
+    description: Plans, payments, and invoices for your account or organization.
+    icon: credit-card
+    link: /subscription-billing/
+  - title: FAQs
+    description: Common questions about accounts, billing, and security.
+    icon: question-mark-circle
+    link: /faqs/
 ---
 
 A Docker account identifies you and lets you access Docker products. You
 manage it in [Docker Home](https://app.docker.com/). Docker has two
 primary account types: individual and organization. A company groups
-multiple organizations and requires Docker Business.
+multiple organizations.
 
 | Account type | What it is | Who it's for |
 | --- | --- | --- |
@@ -32,12 +48,8 @@ multiple organizations and requires Docker Business.
 | Company | Multiple organizations under centralized administration | Docker Business subscribers |
 
 You always sign in with your individual account, then work in the
-organizations you own or belong to.
-
-For authentication, tokens, and roles, see
-[Security](/manuals/security/_index.md). For plans and payments, see
-[Subscription and billing](/manuals/subscription-billing/_index.md). For
-common questions, see [FAQs](/manuals/faqs/_index.md).
+organizations you own or belong to. Those organizations sit under a
+company when you administer more than one.
 
 ## Next steps
 
