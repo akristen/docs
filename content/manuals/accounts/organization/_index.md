@@ -20,6 +20,14 @@ grid:
     description: Explore how to manage a company.
     icon: building-office-2
     link: /accounts/organization/company/
+  - title: Activity logs
+    description: Review member activity across your organization and repositories.
+    icon: clipboard-document-list
+    link: /accounts/organization/activity-logs/
+  - title: Insights
+    description: See how people in your organization use Docker.
+    icon: chart-bar
+    link: /accounts/organization/insights/
   - title: Security
     description: Explore security features for administrators.
     icon: shield-check
@@ -48,19 +56,9 @@ As an organization or company owner, you can:
 - Set company-wide policies, including SCIM provisioning and security
   enforcement
 
-## Individual and organization accounts
-
-Docker has two primary account types:
-
-- Individual accounts that are identified by a Docker ID.
-- Organization accounts that are shared workspaces for teams and
-  repositories.
-
-Every organization is created and administered by one or more individual
-accounts. You always sign in with your individual account, then work in the
-organizations you own or belong to. Organization owners and members are
-individual accounts that hold a role in that organization. For individual
-accounts, see [Docker individual accounts](/manuals/accounts/individual/_index.md).
+For how individual, organization, and company accounts compare, see
+[Accounts](/manuals/accounts/_index.md). For individual accounts, see
+[Docker individual accounts](/manuals/accounts/individual/_index.md).
 
 ## Organization structure
 

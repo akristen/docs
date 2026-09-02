@@ -38,9 +38,9 @@ grid:
 A Docker account is how Docker identifies you. Use it to access products like
 Docker Hub and Docker Desktop, manage settings, and join organizations.
 
-Docker has two primary account types: individual and organization. You create
-and administer organizations with your individual account. For organization
-accounts, including companies, see
+For how individual, organization, and company accounts compare, see
+[Accounts](/manuals/accounts/_index.md). For organization accounts, including
+companies, see
 [Organization accounts](/manuals/accounts/organization/_index.md).
 
 ## Docker ID, email, and sign-in
