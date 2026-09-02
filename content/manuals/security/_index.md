@@ -40,30 +40,30 @@ settings in [Docker Home](https://app.docker.com/).
 
 You sign in with your individual account.
 
-[Authentication](/manuals/security/authentication/_index.md) for that
-account is two-factor authentication (2FA): your password plus a
-time-based one-time password (TOTP) from an authenticator app.
+[Two-factor authentication](/manuals/security/authentication/2fa/_index.md)
+(2FA) adds a time-based one-time password (TOTP) from an authenticator
+app to your password.
 
-[Access tokens](/manuals/security/access-tokens/_index.md) for that
-account are personal access tokens (PATs). A PAT authenticates the
-Docker CLI and tools without your password, and is required for CLI
-sign-in when 2FA is on or single sign-on (SSO) is enforced.
+A [personal access token](/manuals/security/access-tokens/personal-access-tokens.md)
+(PAT) authenticates the Docker CLI and tools without your password, and
+is required for CLI sign-in when 2FA is on or single sign-on (SSO) is
+enforced.
 
 ## Organization accounts
 
 Organization and company owners manage how members sign in, how they
 join, and what they can do.
 
-[Authentication](/manuals/security/authentication/_index.md) for an
-organization or company is SSO through your identity provider, which
-can cover one organization or every organization in a company. OpenID
-Connect (OIDC) connections authenticate GitHub Actions with short-lived
+[Single sign-on](/manuals/security/authentication/single-sign-on/_index.md)
+(SSO) federates sign-in through your identity provider, which can cover
+one organization or every organization in a company.
+[OIDC connections](/manuals/security/authentication/oidc-connections/_index.md)
+use OpenID Connect to authenticate GitHub Actions with short-lived
 tokens.
 
-[Access tokens](/manuals/security/access-tokens/_index.md) for an
-organization are organization access tokens (OATs), which stay with the
-organization when membership changes. OIDC connections are an
-alternative to a long-lived OAT for GitHub Actions.
+An [organization access token](/manuals/security/access-tokens/organization-access-tokens.md)
+(OAT) stays with the organization when membership changes. OIDC
+connections are an alternative to a long-lived OAT for GitHub Actions.
 
 [Provisioning](/manuals/security/provisioning/_index.md) adds users with
 System for Cross-domain Identity Management (SCIM), Just-in-Time (JIT)
